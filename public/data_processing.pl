@@ -36,9 +36,21 @@ my %budget_names = (
 # The years that need to be processed.
 my @years = (2013, 2014);
 
+# The departments are sorted based on an awesome mix of Roman numerals and characters. This order needs
+# to be manually specified to keep the data nicely sorted when saving it to the csv files.
+my @custom_order = qw(I Iia Iib III IV V VI VII VIII IXA IXB X XI XII XIII XV XVI XVII XVIII A B C F H J);
+my %order = map +($custom_order[$_] => $_), 0 .. $#custom_order;
+
 ######################
 # FUNCTIONS
 ######################
+# Custom sorting function for the Roman numeral/character mix of the departments.
+sub custom_sort {
+	my @x = split('_', $a);
+	my @y = split('_', $b);
+	return $order{$x[0]} <=> $order{$y[0]};
+}
+
 # Save expenses budgets to csv.
 # $data contains the collected budgets, $money_type can be either 'uitgaven' (expenses) or 'inkomsten' (income).
 sub save_data {
@@ -48,8 +60,10 @@ sub save_data {
 	my %data = %{$data};
 	my @data_rows;
 	push @data_rows, $column_names;
-	for my $department (keys %data) {
-		for my $bureau (keys $data{$department}) {
+	# Loop over all departments, sorted by their Roman numeral/character ID.
+	for my $department (sort custom_sort keys %data) {
+		# Loop over all bureaus, sorted by their numeric ID.
+		for my $bureau (sort {(split("_", $a))[0] <=> (split("_", $b))[0]} keys $data{$department}) {
 			my @budgets;
 			for my $year (@years) {
 				my $ar_budget = $data{$department}{$bureau}{$year};
