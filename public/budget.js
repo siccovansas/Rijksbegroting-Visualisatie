@@ -20,10 +20,17 @@ $(document).ready(function(){
     */
     adjustForInflation: function(lineItems){
       var inflation = [];
+      /*
       var inflationDivisor = {
         '1976':'1', '1977':'1.065', '1978':'1.14594', '1979':'1.27543122', '1980':'1.4476144347', '1981':'1.5967187214741', '1982':'1.69571528220549', '1983':'1.74997817123607', '1984':'1.82522723259922', '1985':'1.89093541297279', '1986':'1.92686318581928', '1987':'1.99623026050877', '1988':'2.07807570118963', '1989':'2.17782333484673', '1990':'2.29542579492845', '1991':'2.39183367831545', '1992':'2.46358868866491', '1993':'2.53749634932486', '1994':'2.60347125440731', '1995':'2.67636844953071', '1996':'2.75665950301663', '1997':'2.82006267158602', '1998':'2.86518367433139', '1999':'2.92821771516668', '2000':'3.02777711748235', '2001':'3.11255487677186', '2002':'3.16235575480021', '2003':'3.23508993716061', '2004':'3.32243736546395', '2005':'3.43540023588972', '2006':'3.54533304343819', '2007':'3.64460236865446', '2008':'3.78309725866333', '2009':'3.76796486962868', '2010':'3.82825230754274', '2011':'3.9507563813841', '2012':'4.03372226539317', '2013':'4.15473393335497'
       };
-      var years = _.range(1976, 2018);
+      */
+      var inflationDivisor = {
+        '2013':'1',
+	'2014':'1.025'
+      };
+      //var years = _.range(1976, 2018);
+      var years = _.range(2013, 2015);
       _.each(lineItems, function(i){
           var l = JSON.parse(JSON.stringify(i));
         _.each(years, function(y){
@@ -41,10 +48,17 @@ $(document).ready(function(){
     */
     adjustPerCapita: function(lineItems){
       var perCapita= [];
+      /*
       var perCapitaDivisor = {
         '2013': '310000', '2012': '310000', '2011': '310000', '2010': '309349.689', '2009': '306771.529', '2008': '304093.966', '2007': '301231.207', '2006': '298379.912', '2005': '295516.599', '2004': '292805.298', '2003': '290107.933', '2002': '287625.193', '2001': '284968.955', '2000': '282162.411', '1999': '272690.813', '1998': '270248.003', '1997': '267783.607', '1996': '265228.572', '1995': '262803.276', '1994': '260327.021', '1993': '257782.608', '1992': '255029.699', '1991': '252153.092', '1990': '249464.396', '1989': '246819.23', '1988': '244498.982', '1987': '242288.918', '1986': '240132.887', '1985': '237923.795', '1984': '235824.902', '1983': '233791.994', '1982': '231664.458', '1981': '229465.714', '1980': '227224.681', '1979': '225055.487', '1978': '222584.545', '1977': '220239.425', '1976': '218035.164'
       };
-      var years = _.range(1976, 2018);
+      */
+      var perCapitaDivisor = {
+        '2013': '16780',
+        '2014': '16829'
+      }
+      //var years = _.range(1976, 2018);
+      var years = _.range(2013, 2015);
       _.each(lineItems, function(i){
           var l = JSON.parse(JSON.stringify(i));
         _.each(years, function(y){
@@ -63,7 +77,8 @@ $(document).ready(function(){
     loadExpenseLineItems: function(){
       var items = [];
       var that = this;
-      d3.csv('public/us_budget_expenses_2013.csv', function(csv){
+      //d3.csv('public/us_budget_expenses_2013.csv.orig', function(csv){
+      d3.csv('public/nl_rijksbegroting_uitgaven.csv', function(csv){
         $.each(csv, function(row, data){
           items.push(data);
         });
@@ -80,7 +95,8 @@ $(document).ready(function(){
     loadIncomeLineItems: function(){
       var items = [];
       var that = this;
-      d3.csv('public/us_budget_revenues_2013.csv', function(csv){
+      //d3.csv('public/us_budget_revenues_2013.csv.orig', function(csv){
+      d3.csv('public/nl_rijksbegroting_inkomsten.csv', function(csv){
         $.each(csv, function(row, data){
           items.push(data);
         });
@@ -102,10 +118,10 @@ $(document).ready(function(){
   * the level of the visualization: at budget level, agency, or bureau
   */
   Budget.State = {
-    yearTracker: '2011',
-    typeTracker: "expenses",
+    yearTracker: '2013',
+    typeTracker: "uitgaven",
     moneyTracker: "normal",
-    capitaTracker: "total",
+    capitaTracker: "totaal",
     treemapClicks: 0,
 
     /*
@@ -138,7 +154,7 @@ $(document).ready(function(){
     */
     resetState: function(){
       this.removeTrackers();
-      if(this.typeTracker === 'expenses'){
+      if(this.typeTracker === 'uitgaven'){
         this.levelTracker = "budget";
         return Budget.Expenses.getTopLevelAgencies(this.yearTracker);
       } else {
@@ -151,7 +167,7 @@ $(document).ready(function(){
     * Get the current expense items based on the inflation tracker
     */
     currentExpenseItems: function(){
-      if(this.capitaTracker === "total"){
+      if(this.capitaTracker === "totaal"){
         if(this.moneyTracker === "normal"){
           return expenseLineItems;
         } else if(this.moneyTracker === "inflation"){
@@ -170,7 +186,7 @@ $(document).ready(function(){
     * Get the current income items based on the inflation tracker
     */
     currentIncomeItems: function(){
-      if(this.capitaTracker === "total"){
+      if(this.capitaTracker === "totaal"){
         if(this.moneyTracker === "normal"){
           return incomeLineItems;
         } else if(this.moneyTracker === "inflation"){
@@ -213,14 +229,17 @@ $(document).ready(function(){
 
       if(typeof this.levelTracker === "undefined" || typeof name === "undefined"){
         return this.resetState();
-      } else if(this.typeTracker === "expenses"){
+      } else if(this.typeTracker === "uitgaven"){
         return this.treemapExpenseData(name);
-      } else if(this.typeTracker === "receipts"){
+      } else if(this.typeTracker === "inkomsten"){
         return this.treemapReceiptData(name);
       }
     },
 
     /*
+    * NOTE: adjusted for the Dutch Rijksbegroting as it only contains two levels of detail,
+    * so the advancement to the third level was removed.
+    *
     * Advance the level of the visualization, from:
     * Budget (shows the overall budget in its entirety) ->
     * agency (shows a single agency) ->
@@ -230,13 +249,9 @@ $(document).ready(function(){
     */
     advanceLevel: function(name){
       if(this.levelTracker === "budget"){
-        $('.agency').html("<strong>Department:</strong> " + name);
+        $('.agency').html("<strong>Departement:</strong> " + name);
         this.levelTracker = "agency";
         this.agencyTracker = name;
-      } else if(this.levelTracker === "agency"){
-        $('.bureau').html("<strong>Bureau:</strong> " + name);
-        this.levelTracker = "bureau";
-        this.bureauTracker = name;
       } else {
         this.levelTracker = "budget";
       }
@@ -272,7 +287,7 @@ $(document).ready(function(){
     * Get the data we need to create the area graph
     */
     areaGraphData: function(name){
-      if(this.typeTracker === "receipts") {
+      if(this.typeTracker === "inkomsten") {
         if(this.levelTracker === "budget") {
           return Budget.Receipts.getHistorical(name);
         } else if(this.levelTracker === "agency") {
@@ -341,7 +356,7 @@ $(document).ready(function(){
           return false;
         }
       });
-      var years = _.range(1976, 2013);
+      var years = _.range(2013, 2015);
       _.each(years, function(y){
         var amount = _.reduce(rows,function(sum, r){
           return sum + parseFloat(r[y].replace(/\,/g,''));
@@ -480,16 +495,16 @@ $(document).ready(function(){
       var incomeItems = Budget.State.currentIncomeItems();
       var rows = _.filter(incomeItems, function(r){
         if(typeof accountName !== "undefined"){
-          return r['Agency name'] === agencyName && r['Bureau name'] === bureauName && r['Account name'] === accountName;
+          return r['Agency Name'] === agencyName && r['Bureau Name'] === bureauName && r['Account Name'] === accountName;
         } else if(typeof bureauName !== "undefined"){
-          return r['Agency name'] === agencyName && r['Bureau name'] === bureauName;
+          return r['Agency Name'] === agencyName && r['Bureau Name'] === bureauName;
         } else if(typeof agencyName !== "undefined"){
-          return r['Agency name'] === agencyName;
+          return r['Agency Name'] === agencyName;
         } else {
           return false;
         }
       });
-      var years = _.range(1976, 2013);
+      var years = _.range(2013, 2014);
       _.each(years, function(y){
         var amount = _.reduce(rows,function(sum, r){
           return sum + parseFloat(r[y].replace(/\,/g,''));
@@ -503,9 +518,9 @@ $(document).ready(function(){
 
     receiptItem: function(item){
       return {
-        "agencyName" : item["Agency name"],
-        "bureauName" : item["Bureau name"],
-        "name" : item["Account name"],
+        "agencyName" : item["Agency Name"],
+        "bureauName" : item["Bureau Name"],
+        "name" : item["Account Name"],
         "uniqueName" : item['Unique']
       };
     },
@@ -685,18 +700,18 @@ $(document).ready(function(){
         var msg = d.name;
         if(Budget.State.capitaTracker === "per_capita"){
           if(d.size){
-            msg += " : <div class='treemap_text_details'>$";
+            msg += " : <div class='treemap_text_details'>€";
             msg += (d.size).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
-            msg += " Per Person: ";
-            msg += percentOfParent(d).toFixed(2) + "% of total</div>";
+            msg += " per persoon: ";
+            msg += percentOfParent(d).toFixed(2) + "% van totaal</div>";
           }
           return msg;
         } else {
           if(d.size){
-            msg += " : <div class='treemap_text_details'>$";
+            msg += " : <div class='treemap_text_details'>€";
             msg += (d.size / 1000000).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
-            msg += " Billion : ";
-            msg += percentOfParent(d).toFixed(2) + "% of total</div>";
+            msg += " miljard: ";
+            msg += percentOfParent(d).toFixed(2) + "% van totaal</div>";
           }
           return msg;
         }
@@ -846,8 +861,8 @@ $(document).ready(function(){
     populateList: function(f){
       var expenseList = $('.expenses');
       expenseList.children().remove();
-      var amountUnit = Budget.State.capitaTracker === "per_capita" ? "per person" : "billions";
-      var tableHeaders = "<tr><td><strong>Department</strong></td><td><strong>Amount (" + amountUnit + ")</strong></td></tr>";
+      var amountUnit = Budget.State.capitaTracker === "per_capita" ? "per persoon" : "miljarden";
+      var tableHeaders = "<tr><td><strong>Departement</strong></td><td><strong>Bedrag (" + amountUnit + ")</strong></td></tr>";
       expenseList.append(tableHeaders);
       var s = _.sortBy(f, function(n){ return -1 * n.size;});
       _.each(s, function(e){
@@ -855,7 +870,7 @@ $(document).ready(function(){
         expenseList.append(expense);
       });
       var total = totalAmount(f);
-      expenseList.append("<tr><td><strong>Total</strong></td><td><strong>" + toDollar(total) + "</strong></td></tr>");
+      expenseList.append("<tr><td><strong>Totaal</strong></td><td><strong>" + toDollar(total) + "</strong></td></tr>");
     },
 
     setTreemapBackgroundToWhite: function(name){
@@ -879,15 +894,14 @@ $(document).ready(function(){
       var expenses = totalAmount(Budget.Expenses.yearlyExpenseSummary(year));
       var receipts = totalAmount(Budget.Receipts.yearlyReceiptsSummary(year));
       var net = receipts - expenses;
-      $('.summary_year').html("<strong>"+ Budget.State.yearTracker + " Summary:</strong>");
-      $('.summary_expenses').html("Expenses - " + toDollarSummary(expenses));
-      $('.summary_receipts').html("Income - " + toDollarSummary(receipts));
-      $('.summary_net').html("Net - " + toDollarSummary(net));
+      $('.summary_year').html("<strong>"+ Budget.State.yearTracker + " Overzicht:</strong>");
+      $('.summary_expenses').html("Uitgaven - " + toDollarSummary(expenses));
+      $('.summary_receipts').html("Inkomsten - " + toDollarSummary(receipts));
+      $('.summary_net').html("Netto - " + toDollarSummary(net));
     },
 
     setupAreaChart: function(data){
-
-      var margin = {top: 20, right: 20, bottom: 30, left: 40},
+      var margin = {top: 20, right: 50, bottom: 30, left: 80},
           width = 960 - margin.left - margin.right,
           height = 500 - margin.top - margin.bottom;
 
@@ -983,13 +997,13 @@ $(document).ready(function(){
           .attr("text", function(d){
             var msg = d.date.getFullYear().toString();
             if(d.amount){
-              msg += " - $";
+              msg += " - €";
               if(Budget.State.capitaTracker === "per_capita"){
                 msg += (d.amount).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
-                msg += " Per Person";
+                msg += " per persoon";
               } else {
                 msg += (d.amount/1000000).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
-                msg += " Billion";
+                msg += " miljard";
               }
             }
             return msg;
@@ -1021,9 +1035,9 @@ $(document).ready(function(){
           .style("text-anchor", "end")
           .text(function(){
             if(Budget.State.capitaTracker === "per_capita"){
-              return "Per Person ($)";
+              return "per persoon (€)";
             } else { 
-              return "Billions ($)";
+              return "miljarden (€)";
             }
           });
     },
@@ -1065,14 +1079,14 @@ $(document).ready(function(){
 
   var toDollar = function(d){
     if(Budget.State.capitaTracker === "per_capita"){
-      return "$" + (d).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
+      return "€" + (d).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
     } else {
-      return "$" + (d/1000000).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
+      return "€" + (d/1000000).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
     }
   };
 
   var toDollarSummary = function(d){
-    return "$" + (d/1000000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1,') + " Billion";
+    return "€" + (d/1000000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1,') + " miljard";
   };
 
   var totalAmount = function(f){
@@ -1113,16 +1127,16 @@ $(document).ready(function(){
 
   $('.type_chooser li').on("click", function(){
     $(this).addClass('active').siblings().removeClass('active');
-    var type = this.textContent.toLowerCase() == 'expenses' ? 'expenses' : 'receipts';
+    var type = this.textContent.toLowerCase() == 'uitgaven' ? 'uitgaven' : 'inkomsten';
     Budget.State.typeTracker = type;
     Budget.Display.updateTreemap();
   });
 
   $('.inflation_chooser li').on("click", function(){
     $(this).addClass('active').siblings().removeClass('active');
-    if (this.textContent === "Inflation Adjusted") {
+    if (this.textContent === "Zonder Inflatie") {
       Budget.State.moneyTracker = "inflation";
-    } else if(this.textContent === "Plain Dollars"){
+    } else if(this.textContent === "Normale Euro's"){
       Budget.State.moneyTracker = "normal";
     }
     if(Budget.State.atBudgetLevel()){
@@ -1136,8 +1150,8 @@ $(document).ready(function(){
 
   $('.capita_chooser_list li').on("click", function(){
     $(this).addClass('active').siblings().removeClass('active');
-    if (this.textContent === "Total") {
-      Budget.State.capitaTracker = "total";
+    if (this.textContent === "Totaal") {
+      Budget.State.capitaTracker = "totaal";
     } else if(this.textContent === "Per Capita"){
       Budget.State.capitaTracker = "per_capita";
     }
