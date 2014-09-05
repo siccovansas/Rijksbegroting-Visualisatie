@@ -504,7 +504,7 @@ $(document).ready(function(){
           return false;
         }
       });
-      var years = _.range(2013, 2014);
+      var years = _.range(2013, 2015);
       _.each(years, function(y){
         var amount = _.reduce(rows,function(sum, r){
           return sum + parseFloat(r[y].replace(/\,/g,''));
