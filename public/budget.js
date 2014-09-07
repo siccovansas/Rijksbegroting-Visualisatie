@@ -26,11 +26,12 @@ $(document).ready(function(){
       };
       */
       var inflationDivisor = {
-        '2013':'1',
-	'2014':'1.025'
+        '2012':'1.000',
+        '2013':'1.025',
+	'2014':'1.050'
       };
       //var years = _.range(1976, 2018);
-      var years = _.range(2013, 2015);
+      var years = _.range(2012, 2015);
       _.each(lineItems, function(i){
           var l = JSON.parse(JSON.stringify(i));
         _.each(years, function(y){
@@ -54,11 +55,12 @@ $(document).ready(function(){
       };
       */
       var perCapitaDivisor = {
+        '2012': '16711',
         '2013': '16780',
         '2014': '16829'
       }
       //var years = _.range(1976, 2018);
-      var years = _.range(2013, 2015);
+      var years = _.range(2012, 2015);
       _.each(lineItems, function(i){
           var l = JSON.parse(JSON.stringify(i));
         _.each(years, function(y){
@@ -118,7 +120,7 @@ $(document).ready(function(){
   * the level of the visualization: at budget level, agency, or bureau
   */
   Budget.State = {
-    yearTracker: '2013',
+    yearTracker: '2014',
     typeTracker: "uitgaven",
     moneyTracker: "normal",
     capitaTracker: "totaal",
@@ -356,7 +358,7 @@ $(document).ready(function(){
           return false;
         }
       });
-      var years = _.range(2013, 2015);
+      var years = _.range(2012, 2015);
       _.each(years, function(y){
         var amount = _.reduce(rows,function(sum, r){
           return sum + parseFloat(r[y].replace(/\,/g,''));
@@ -504,7 +506,7 @@ $(document).ready(function(){
           return false;
         }
       });
-      var years = _.range(2013, 2015);
+      var years = _.range(2012, 2015);
       _.each(years, function(y){
         var amount = _.reduce(rows,function(sum, r){
           return sum + parseFloat(r[y].replace(/\,/g,''));
