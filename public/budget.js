@@ -28,7 +28,7 @@ $(document).ready(function(){
       var inflationDivisor = {
         '2012':'1.000',
         '2013':'1.025',
-	'2014':'1.050'
+	'2014':'1.050625'
       };
       //var years = _.range(1976, 2018);
       var years = _.range(2012, 2015);
