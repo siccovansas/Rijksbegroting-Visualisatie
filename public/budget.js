@@ -895,11 +895,11 @@ $(document).ready(function(){
     populateYearlySummary: function(year){
       var expenses = totalAmount(Budget.Expenses.yearlyExpenseSummary(year));
       var receipts = totalAmount(Budget.Receipts.yearlyReceiptsSummary(year));
-      var net = receipts - expenses;
+      var net = toDollarSummaryInt(receipts) - toDollarSummaryInt(expenses);
       $('.summary_year').html("<strong>"+ Budget.State.yearTracker + " Overzicht:</strong>");
-      $('.summary_expenses').html("Uitgaven - " + toDollarSummary(expenses));
-      $('.summary_receipts').html("Inkomsten - " + toDollarSummary(receipts));
-      $('.summary_net').html("Netto - " + toDollarSummary(net));
+      $('.summary_expenses').html("Uitgaven " + toDollarSummary(expenses));
+      $('.summary_receipts').html("Inkomsten " + toDollarSummary(receipts));
+      $('.summary_net').html("Netto €" + net + " miljard");
     },
 
     setupAreaChart: function(data){
@@ -1089,6 +1089,10 @@ $(document).ready(function(){
 
   var toDollarSummary = function(d){
     return "€" + (d/1000000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1,') + " miljard";
+  };
+
+  var toDollarSummaryInt = function(d){
+    return (d/1000000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
   };
 
   var totalAmount = function(f){
