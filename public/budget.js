@@ -79,7 +79,6 @@ $(document).ready(function(){
     loadExpenseLineItems: function(){
       var items = [];
       var that = this;
-      //d3.csv('public/us_budget_expenses_2013.csv.orig', function(csv){
       d3.csv('public/nl_rijksbegroting_uitgaven.csv', function(csv){
         $.each(csv, function(row, data){
           items.push(data);
@@ -88,6 +87,8 @@ $(document).ready(function(){
         inflationExpenseItems = that.adjustForInflation(items);
         perCapitaExpenseItems = that.adjustPerCapita(items);
         perCapitaInflationExpenseItems = that.adjustPerCapita(inflationExpenseItems);
+        volledigExpenseItems = expenseLineItems;
+        volledigInflationExpenseItems = inflationExpenseItems;
       });
     },
 
@@ -97,7 +98,6 @@ $(document).ready(function(){
     loadIncomeLineItems: function(){
       var items = [];
       var that = this;
-      //d3.csv('public/us_budget_revenues_2013.csv.orig', function(csv){
       d3.csv('public/nl_rijksbegroting_inkomsten.csv', function(csv){
         $.each(csv, function(row, data){
           items.push(data);
@@ -106,6 +106,8 @@ $(document).ready(function(){
         inflationIncomeItems = that.adjustForInflation(items);
         perCapitaIncomeItems = that.adjustPerCapita(items);
         perCapitaInflationIncomeItems = that.adjustPerCapita(inflationIncomeItems);
+        volledigIncomeItems = incomeLineItems;
+        volledigInflationIncomeItems = inflationIncomeItems;
       });
     }
   };
@@ -181,7 +183,14 @@ $(document).ready(function(){
         } else if(this.moneyTracker === "inflation"){
           return perCapitaInflationExpenseItems;
         }
+      } else if(this.capitaTracker === "volledig") {
+        if(this.moneyTracker === "normal"){
+          return volledigExpenseItems;
+        } else if(this.moneyTracker === "inflation"){
+          return volledigInflationExpenseItems;
+        }
       }
+
     },
 
     /*
@@ -199,6 +208,12 @@ $(document).ready(function(){
           return perCapitaIncomeItems;
         } else if(this.moneyTracker === "inflation"){
           return perCapitaInflationIncomeItems;
+        }
+      } else if(this.capitaTracker === "volledig") {
+        if(this.moneyTracker === "normal"){
+          return volledigIncomeItems;
+        } else if(this.moneyTracker === "inflation"){
+          return volledigInflationIncomeItems;
         }
       }
     },
@@ -383,16 +398,6 @@ $(document).ready(function(){
       return yearlyBudget;
     },
 
-    // Only use the normal amount for top level year summary data
-    yearlyExpenseSummary: function(year){
-      var that = this;
-      var expenseItems = expenseLineItems;
-      var yearlyBudget = expenseItems.map(
-        function(x) { return that.getYearlyLineItem(x, year); }
-      );
-      return yearlyBudget;
-    },
-
     /*
     * Get all the nested data for a given year. Everything has name, size, and children
     * attributes.
@@ -536,14 +541,6 @@ $(document).ready(function(){
     yearlyReceipts: function(year){
       var that = this;
       var incomeItems = Budget.State.currentIncomeItems();
-      return incomeItems.map(
-        function(x) { return that.receiptForYear(x,year); }
-      );
-    },
-
-    yearlyReceiptsSummary: function(year){
-      var that = this;
-      var incomeItems = incomeLineItems;
       return incomeItems.map(
         function(x) { return that.receiptForYear(x,year); }
       );
@@ -700,23 +697,21 @@ $(document).ready(function(){
 
       var tooltipMessage = function(d){
         var msg = d.name;
-        if(Budget.State.capitaTracker === "per_capita"){
-          if(d.size){
-            msg += " : <div class='treemap_text_details'>€";
-            msg += (d.size).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
+        if(d.size){
+          msg += " : <div class='treemap_text_details'>€";
+          if(Budget.State.capitaTracker === "per_capita"){
+            msg += (d.size).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1.').replace(/\.(\d{2})$/,',$1');
             msg += " per persoon: ";
-            msg += percentOfParent(d).toFixed(2) + "% van totaal</div>";
-          }
-          return msg;
-        } else {
-          if(d.size){
-            msg += " : <div class='treemap_text_details'>€";
-            msg += (d.size / 1000000).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
+          } else if(Budget.State.capitaTracker === "volledig"){
+            msg += (d.size * 1000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1.');
+            msg += " : ";
+          } else {
+            msg += (d.size / 1000000).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1.').replace(/\.(\d{2})$/,',$1');
             msg += " miljard: ";
-            msg += percentOfParent(d).toFixed(2) + "% van totaal</div>";
           }
-          return msg;
+          msg += percentOfParent(d).toFixed(2).replace(/\.(\d{2})$/,',$1') + "% van totaal</div>";
         }
+        return msg;
       };
 
       var labelWidth = function(d, context){
@@ -863,8 +858,20 @@ $(document).ready(function(){
     populateList: function(f){
       var expenseList = $('.expenses');
       expenseList.children().remove();
-      var amountUnit = Budget.State.capitaTracker === "per_capita" ? "per persoon" : "miljarden";
-      var tableHeaders = "<tr><td><strong>Departement</strong></td><td><strong>Bedrag (" + amountUnit + ")</strong></td></tr>";
+      //var amountUnit = Budget.State.capitaTracker === "per_capita" ? "per persoon" : "miljarden";
+      var amountUnit;
+      switch(Budget.State.capitaTracker) {
+        case "per_capita":
+          amountUnit = " (per persoon)";
+          break;
+        case "volledig":
+          amountUnit = "";
+          break;
+        case "totaal":
+          amountUnit = " (miljarden)";
+          break;
+      } 
+      var tableHeaders = "<tr><td><strong>Departement</strong></td><td><strong>Bedrag" + amountUnit + "</strong></td></tr>";
       expenseList.append(tableHeaders);
       var s = _.sortBy(f, function(n){ return -1 * n.size;});
       _.each(s, function(e){
@@ -893,17 +900,23 @@ $(document).ready(function(){
     },
 
     populateYearlySummary: function(year){
-      var expenses = totalAmount(Budget.Expenses.yearlyExpenseSummary(year));
-      var receipts = totalAmount(Budget.Receipts.yearlyReceiptsSummary(year));
+      var expenses = totalAmount(Budget.Expenses.getYearlyExpenses(year));
+      var receipts = totalAmount(Budget.Receipts.yearlyReceipts(year));
       var net = toDollarSummaryInt(receipts) - toDollarSummaryInt(expenses);
       $('.summary_year').html("<strong>"+ Budget.State.yearTracker + " Overzicht:</strong>");
       $('.summary_expenses').html("Uitgaven " + toDollarSummary(expenses));
       $('.summary_receipts').html("Inkomsten " + toDollarSummary(receipts));
-      $('.summary_net').html("Netto €" + net + " miljard");
+      if(Budget.State.capitaTracker === "per_capita"){
+        $('.summary_net').html("Netto €" + net.toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1.').replace(/\.(\d{2})$/,',$1'));
+      } else if(Budget.State.capitaTracker === "volledig"){
+        $('.summary_net').html("Netto €" + net.toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1.'));
+      } else {
+        $('.summary_net').html("Netto €" + net + " miljard");
+      }
     },
 
     setupAreaChart: function(data){
-      var margin = {top: 20, right: 50, bottom: 30, left: 80},
+      var margin = {top: 20, right: 50, bottom: 30, left: 110},
           width = 960 - margin.left - margin.right,
           height = 500 - margin.top - margin.bottom;
 
@@ -916,6 +929,8 @@ $(document).ready(function(){
       var minAmount = d3.min(data, function(d) {
         if(Budget.State.capitaTracker === "per_capita"){
           return d.amount;
+        } else if(Budget.State.capitaTracker === "volledig"){
+          return d.amount * 1000;
         } else {
           return d.amount/1000000;
         }
@@ -923,6 +938,8 @@ $(document).ready(function(){
       var maxAmount = d3.max(data, function(d) {
         if(Budget.State.capitaTracker === "per_capita"){
           return d.amount;
+        } else if(Budget.State.capitaTracker === "volledig"){
+          return d.amount * 1000;
         } else {
           return d.amount/1000000;
         }
@@ -961,6 +978,8 @@ $(document).ready(function(){
             } else {
               if(Budget.State.capitaTracker === "per_capita"){
                 return y(d.amount);
+              } else if(Budget.State.capitaTracker === "volledig"){
+                return y(d.amount * 1000);
               } else {
                 return y(d.amount/1000000);
               }
@@ -1001,10 +1020,12 @@ $(document).ready(function(){
             if(d.amount){
               msg += " - €";
               if(Budget.State.capitaTracker === "per_capita"){
-                msg += (d.amount).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
+                msg += (d.amount).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1.').replace(/\.(\d{2})$/,',$1');
                 msg += " per persoon";
+              } else if(Budget.State.capitaTracker === "volledig"){
+                msg += (d.amount * 1000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1.');
               } else {
-                msg += (d.amount/1000000).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
+                msg += (d.amount/1000000).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1.').replace(/\.(\d{2})$/,',$1');
                 msg += " miljard";
               }
             }
@@ -1038,6 +1059,8 @@ $(document).ready(function(){
           .text(function(){
             if(Budget.State.capitaTracker === "per_capita"){
               return "per persoon (€)";
+            } else if(Budget.State.capitaTracker === "volledig"){
+              return "euro (€)";
             } else { 
               return "miljarden (€)";
             }
@@ -1081,18 +1104,32 @@ $(document).ready(function(){
 
   var toDollar = function(d){
     if(Budget.State.capitaTracker === "per_capita"){
-      return "€" + (d).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
+      return "€" + (d).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1.').replace(/\.(\d{2})$/,',$1');
+    } else if(Budget.State.capitaTracker === "volledig") {
+      return "€" + (d * 1000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1.');
     } else {
-      return "€" + (d/1000000).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
+      return "€" + (d/1000000).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1.').replace(/\.(\d{2})$/,',$1');
     }
   };
 
   var toDollarSummary = function(d){
-    return "€" + (d/1000000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1,') + " miljard";
+    if(Budget.State.capitaTracker === "per_capita"){
+      return "€" + (d).toFixed(2).replace(/(\d)(?=(\d{3})+\b)/g,'$1.').replace(/\.(\d{2})$/,',$1');
+    } else if(Budget.State.capitaTracker === "volledig"){
+      return "€" + (d * 1000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1.');
+    } else {
+      return "€" + (d/1000000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1.') + " miljard";
+    }
   };
 
   var toDollarSummaryInt = function(d){
-    return (d/1000000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1,');
+    if(Budget.State.capitaTracker === "per_capita"){
+      return (d);
+    } else if(Budget.State.capitaTracker === "volledig"){
+      return (d * 1000);
+    } else {
+      return (d/1000000).toFixed(0).replace(/(\d)(?=(\d{3})+\b)/g,'$1.');
+    }
   };
 
   var totalAmount = function(f){
@@ -1142,7 +1179,7 @@ $(document).ready(function(){
     $(this).addClass('active').siblings().removeClass('active');
     if (this.textContent === "Zonder Inflatie") {
       Budget.State.moneyTracker = "inflation";
-    } else if(this.textContent === "Normale Euro's"){
+    } else if(this.textContent === "Oorspronkelijk Bedrag"){
       Budget.State.moneyTracker = "normal";
     }
     if(Budget.State.atBudgetLevel()){
@@ -1151,14 +1188,17 @@ $(document).ready(function(){
       var treemapName = Budget.State.lastItem;
       Budget.Display.updateTreemap(treemapName, true);
     }
+    Budget.Display.populateYearlySummary(Budget.State.yearTracker);
   });
 
 
   $('.capita_chooser_list li').on("click", function(){
     $(this).addClass('active').siblings().removeClass('active');
-    if (this.textContent === "Totaal") {
+    if (this.textContent === "In Miljarden") {
       Budget.State.capitaTracker = "totaal";
-    } else if(this.textContent === "Per Capita"){
+    } else if(this.textContent === "Volledig Bedrag"){
+      Budget.State.capitaTracker = "volledig";
+    } else if(this.textContent === "Per Persoon"){
       Budget.State.capitaTracker = "per_capita";
     }
     if(Budget.State.atBudgetLevel()){
@@ -1167,6 +1207,7 @@ $(document).ready(function(){
       var treemapName = Budget.State.lastItem;
       Budget.Display.updateTreemap(treemapName, true);
     }
+    Budget.Display.populateYearlySummary(Budget.State.yearTracker);
   });
 
   $(document).on("click", ".expense_table tr", function(e) {
