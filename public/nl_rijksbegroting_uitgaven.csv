@@ -16,8 +16,8 @@ IIB,"Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs",7,"Kabine
 IIB,"Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs",8,"Kabinet van de Gouverneur van Sint Maarten",1886,2119,2043
 IIB,"Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs",10,"Nominaal en onvoorzien",595,191,0
 III,"Algemene zaken",1,"Kabinet van de Koning/Koningin",2372,2402,2331
-III,"Algemene zaken",1,"Commissie van toezicht betreffende de inlichtingen- en veiligheidsdiensten",1064,1075,1076
 III,"Algemene zaken",1,"Eenheid van het algemeen regeringsbeleid",56835,58687,57085
+III,"Algemene zaken",1,"Commissie van toezicht betreffende de inlichtingen- en veiligheidsdiensten",1064,1075,1076
 III,"Algemene zaken",3,"Nominaal en onvoorzien",0,0,0
 IV,Koninkrijksrelaties,1,Waarborgfunctie,63657,63607,61821
 IV,Koninkrijksrelaties,2,"Bevorderen autonomie Koninkrijkspartners",362799,213131,193709
@@ -25,8 +25,8 @@ IV,Koninkrijksrelaties,3,"Nominaal en onvoorzien",1673,805,1223
 V,"Buitenlandse Zaken",1,"Versterkte internationale rechtsorde en eerbiediging van mensenrechten",100562,114886,106237
 V,"Buitenlandse Zaken",2,"Veiligheid en stabiliteit",786801,776500,273466
 V,"Buitenlandse Zaken",3,"Europese samenwerking",7526717,7580467,7824896
-V,"Buitenlandse Zaken",4,"Meer welvaart, eerlijkere verdeling en minder armoede",881135,938979,0
 V,"Buitenlandse Zaken",4,"Consulaire belangenbehartiging en het internationaal uitdragen van Nederlandse waarden en belangen",0,0,53291
+V,"Buitenlandse Zaken",4,"Meer welvaart, eerlijkere verdeling en minder armoede",881135,938979,0
 V,"Buitenlandse Zaken",5,"Toegenomen menselijke ontplooiing en sociale ontwikkeling",1088142,1078152,0
 V,"Buitenlandse Zaken",6,"Duurzaam water- en milieubeheer",430620,397960,0
 V,"Buitenlandse Zaken",7,"Welzijn en veiligheid van Nederlanders in het buitenland en regulering van het personenverkeer",25014,24964,0
@@ -124,12 +124,12 @@ X,Defensie,10,"Centraal apparaat",0,1592910,1698315
 X,Defensie,11,"Geheime uitgaven",0,5264,5264
 X,Defensie,12,"Nominaal en onvoorzien",0,63401,47727
 X,Defensie,20,Inzet,197750,0,0
-X,Defensie,21,"Commando zeestrijdkrachten",567232,0,0
-X,Defensie,22,"Commando landstrijdkrachten",1218614,0,0
-X,Defensie,23,"Commando luchtstrijdkrachten",654176,0,0
-X,Defensie,24,"Commando Koninklijke marechaussee",372144,0,0
+X,Defensie,21,"Taakuitvoering zeestrijdkrachten",567232,0,0
+X,Defensie,22,"Taakuitvoering landstrijdkrachten",1218614,0,0
+X,Defensie,23,"Taakuitvoering luchtstrijdkrachten",654176,0,0
+X,Defensie,24,"Taakuitvoering marechaussee",372144,0,0
 X,Defensie,25,"Defensie Materieel Organisatie",1966463,0,0
-X,Defensie,26,"Commando DienstenCentra",1059178,0,0
+X,Defensie,26,"Ondersteuning krijgsmacht door Commando DienstenCentra",1059178,0,0
 X,Defensie,70,"Geheime uitgaven",5251,0,0
 X,Defensie,80,"Nominaal en onvoorzien",146908,0,0
 X,Defensie,90,Algemeen,202650,0,0
@@ -234,8 +234,8 @@ XVI,"Volksgezondheid, Welzijn en Sport",47,"Oorlogsgetroffenen en Herinnering We
 XVI,"Volksgezondheid, Welzijn en Sport",97,Algemeen,33122,0,0
 XVI,"Volksgezondheid, Welzijn en Sport",98,Apparaatsuitgaven,228503,0,0
 XVI,"Volksgezondheid, Welzijn en Sport",99,"Nominaal en onvoorzien",-55162,0,0
-XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",1,"Een sterke internationale concurrentiepositie",0,89197,0
 XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",1,"Duurzame handel en investeringen",0,0,463256
+XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",1,"Een sterke internationale concurrentiepositie",0,89197,0
 XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",2,"Duurzame ontwikkeling, voedselzekerheid en water",0,0,581953
 XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",3,"Sociale vooruitgang",0,0,985987
 XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",4,"Vrede en veiligheid voor ontwikkeling",0,0,685469
