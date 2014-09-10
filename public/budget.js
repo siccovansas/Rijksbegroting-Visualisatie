@@ -946,7 +946,7 @@ $(document).ready(function(){
       });
 
       var xAxis = d3.svg.axis()
-          .scale(x);
+          .scale(x).ticks(_.range(2012, 2015).length);
 
       var yAxis = d3.svg.axis()
           .scale(y)
