@@ -94,7 +94,7 @@ body {
   clear: both;
 }
 
-.area {
+.bar {
   fill: #4ecdc4;
 }
 
@@ -262,4 +262,14 @@ g {
 
 .aweber_form {
   width: 400px;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
 }

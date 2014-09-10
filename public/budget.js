@@ -921,7 +921,7 @@ $(document).ready(function(){
           height = 500 - margin.top - margin.bottom;
 
       var x = d3.time.scale()
-          .range([0, width]);
+          .range([width/data.length/2, width-width/data.length/2]);
 
       var y = d3.scale.linear()
           .range([height, 0]);
@@ -1000,21 +1000,33 @@ $(document).ready(function(){
           .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-
-      svg.append("path")
-          .datum(data)
-          .attr("class", "area")
-          .attr("d", area)
-          .text('simple');
-
       svg.selectAll("area")
           .data(data)
         .enter().append("svg:rect")
-          .attr("x", function(d){ return x(d.date); })
-          .attr("y", 0)
-          .attr("height", height)
-          .attr("width", "30px")
-          .style("opacity", "0")
+          .attr("class", "bar")
+          .attr("x", function(d){ return x(d.date) - (width/data.length)/2; })
+          .attr("y", function(d){
+            if(Budget.State.capitaTracker === "per_capita"){
+              return y(d.amount);
+            } else if(Budget.State.capitaTracker === "volledig"){
+              return y(d.amount * 1000);
+            } else {
+              return y(d.amount/1000000);
+            }
+          })
+          .attr("height", function(d){
+            var yval;
+            if(Budget.State.capitaTracker === "per_capita"){
+              yval = y(d.amount);
+            } else if(Budget.State.capitaTracker === "volledig"){
+              yval = y(d.amount * 1000);
+            } else {
+              yval = y(d.amount/1000000);
+            }
+            return height - yval;
+          })
+          //.attr("width", "100px")
+          .attr("width", width/data.length - 5)
           .attr("text", function(d){
             var msg = d.date.getFullYear().toString();
             if(d.amount){
@@ -1172,8 +1184,14 @@ $(document).ready(function(){
     $(this).addClass('active').siblings().removeClass('active');
     var type = this.textContent.toLowerCase() == 'uitgaven' ? 'uitgaven' : 'inkomsten';
     Budget.State.typeTracker = type;
-    Budget.Display.updateTreemap();
-  });
+    //Budget.Display.updateTreemap();
+    if(Budget.State.atBudgetLevel()){
+      Budget.Display.updateTreemap();
+    } else {
+      var treemapName = Budget.State.lastItem;
+      Budget.Display.updateTreemap(treemapName, true);
+    }
+ });
 
   $('.inflation_chooser li').on("click", function(){
     $(this).addClass('active').siblings().removeClass('active');
