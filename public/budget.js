@@ -20,17 +20,11 @@ $(document).ready(function(){
     */
     adjustForInflation: function(lineItems){
       var inflation = [];
-      /*
-      var inflationDivisor = {
-        '1976':'1', '1977':'1.065', '1978':'1.14594', '1979':'1.27543122', '1980':'1.4476144347', '1981':'1.5967187214741', '1982':'1.69571528220549', '1983':'1.74997817123607', '1984':'1.82522723259922', '1985':'1.89093541297279', '1986':'1.92686318581928', '1987':'1.99623026050877', '1988':'2.07807570118963', '1989':'2.17782333484673', '1990':'2.29542579492845', '1991':'2.39183367831545', '1992':'2.46358868866491', '1993':'2.53749634932486', '1994':'2.60347125440731', '1995':'2.67636844953071', '1996':'2.75665950301663', '1997':'2.82006267158602', '1998':'2.86518367433139', '1999':'2.92821771516668', '2000':'3.02777711748235', '2001':'3.11255487677186', '2002':'3.16235575480021', '2003':'3.23508993716061', '2004':'3.32243736546395', '2005':'3.43540023588972', '2006':'3.54533304343819', '2007':'3.64460236865446', '2008':'3.78309725866333', '2009':'3.76796486962868', '2010':'3.82825230754274', '2011':'3.9507563813841', '2012':'4.03372226539317', '2013':'4.15473393335497'
-      };
-      */
       var inflationDivisor = {
         '2012':'1.000',
         '2013':'1.025',
 	'2014':'1.050625'
       };
-      //var years = _.range(1976, 2018);
       var years = _.range(2012, 2015);
       _.each(lineItems, function(i){
           var l = JSON.parse(JSON.stringify(i));
@@ -49,17 +43,11 @@ $(document).ready(function(){
     */
     adjustPerCapita: function(lineItems){
       var perCapita= [];
-      /*
-      var perCapitaDivisor = {
-        '2013': '310000', '2012': '310000', '2011': '310000', '2010': '309349.689', '2009': '306771.529', '2008': '304093.966', '2007': '301231.207', '2006': '298379.912', '2005': '295516.599', '2004': '292805.298', '2003': '290107.933', '2002': '287625.193', '2001': '284968.955', '2000': '282162.411', '1999': '272690.813', '1998': '270248.003', '1997': '267783.607', '1996': '265228.572', '1995': '262803.276', '1994': '260327.021', '1993': '257782.608', '1992': '255029.699', '1991': '252153.092', '1990': '249464.396', '1989': '246819.23', '1988': '244498.982', '1987': '242288.918', '1986': '240132.887', '1985': '237923.795', '1984': '235824.902', '1983': '233791.994', '1982': '231664.458', '1981': '229465.714', '1980': '227224.681', '1979': '225055.487', '1978': '222584.545', '1977': '220239.425', '1976': '218035.164'
-      };
-      */
       var perCapitaDivisor = {
         '2012': '16711',
         '2013': '16780',
         '2014': '16829'
       }
-      //var years = _.range(1976, 2018);
       var years = _.range(2012, 2015);
       _.each(lineItems, function(i){
           var l = JSON.parse(JSON.stringify(i));
@@ -785,6 +773,9 @@ $(document).ready(function(){
 
       cellEnter.append("svg:rect")
         .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+        .attr("width", 0)
+        .attr("height", 0)
+        .style("fill", "white")
         .transition().duration(2000)
           .attr("class", "cell tooltip")
           .attr("width", function(d) { return d.dx > 2 ? d.dx - 2 : d.dx; })
@@ -858,7 +849,6 @@ $(document).ready(function(){
     populateList: function(f){
       var expenseList = $('.expenses');
       expenseList.children().remove();
-      //var amountUnit = Budget.State.capitaTracker === "per_capita" ? "per persoon" : "miljarden";
       var amountUnit;
       switch(Budget.State.capitaTracker) {
         case "per_capita":
@@ -948,9 +938,33 @@ $(document).ready(function(){
       var xAxis = d3.svg.axis()
           .scale(x).ticks(_.range(2012, 2015).length);
 
+      var nl_NL = {
+        "decimal": ",",
+        "thousands": ".",
+        "grouping": [3],
+        "currency": ["$", ""],
+        "dateTime": "%a %b %e %X %Y",
+        "date": "%d/%d/%Y",
+        "time": "%H:%M:%S",
+        "periods": ["AM", "PM"],
+        "days": ["zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"],
+        "shortDays": ["zo", "ma", "di", "wo", "di", "vr", "za"],
+        "months": ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"],
+        "shortMonths": ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"]
+      }
+      var NL = d3.locale(nl_NL);
+
       var yAxis = d3.svg.axis()
           .scale(y)
           .orient("left");
+
+      if(Budget.State.capitaTracker === "per_capita"){
+        yAxis.tickFormat(NL.numberFormat(",.2f"));
+      } else if(Budget.State.capitaTracker === "volledig"){
+        yAxis.tickFormat(NL.numberFormat(","));
+      } else {
+        yAxis.tickFormat(NL.numberFormat(","));
+      }
 
       var yDomain = function(minimum, maximum){
         if(maximum > 0){
@@ -961,30 +975,7 @@ $(document).ready(function(){
       };
 
       x.domain(d3.extent(data, function(d) { return d.date; }));
-      y.domain(yDomain(minAmount, maxAmount));
-
-      var area = d3.svg.area()
-          .x(function(d) { return x(d.date); })
-          .y0(function(d){
-            if(d.amount < 0) {
-              return y(d.amount/1000000);
-            } else {
-              return y(0);
-            }
-          })
-          .y1(function(d) {
-            if(d.amount < 0){
-              return y(0);
-            } else {
-              if(Budget.State.capitaTracker === "per_capita"){
-                return y(d.amount);
-              } else if(Budget.State.capitaTracker === "volledig"){
-                return y(d.amount * 1000);
-              } else {
-                return y(d.amount/1000000);
-              }
-            }
-          });
+      y.domain(yDomain(minAmount, maxAmount)).nice();
 
       var tooltip = d3.select("#area_graph")
           .append("div")
@@ -1007,25 +998,24 @@ $(document).ready(function(){
           .attr("x", function(d){ return x(d.date) - (width/data.length)/2; })
           .attr("y", function(d){
             if(Budget.State.capitaTracker === "per_capita"){
-              return y(d.amount);
+              return y(Math.max(0, d.amount));
             } else if(Budget.State.capitaTracker === "volledig"){
-              return y(d.amount * 1000);
+              return y(Math.max(0, d.amount * 1000));
             } else {
-              return y(d.amount/1000000);
+              return y(Math.max(0, d.amount/1000000));
             }
           })
           .attr("height", function(d){
             var yval;
             if(Budget.State.capitaTracker === "per_capita"){
-              yval = y(d.amount);
+              yval = Math.abs(y(d.amount) - y(0));
             } else if(Budget.State.capitaTracker === "volledig"){
-              yval = y(d.amount * 1000);
+              yval = Math.abs(y(d.amount * 1000) - y(0));
             } else {
-              yval = y(d.amount/1000000);
+              yval = Math.abs(y(d.amount/1000000) - y(0));
             }
-            return height - yval;
+            return yval;
           })
-          //.attr("width", "100px")
           .attr("width", width/data.length - 5)
           .attr("text", function(d){
             var msg = d.date.getFullYear().toString();
@@ -1058,6 +1048,18 @@ $(document).ready(function(){
       svg.append("g")
           .attr("class", "x axis")
           .attr("transform", "translate(0," + xAxisTransform + ")")
+          .call(xAxis);
+
+      // Little hack. The original x-axis does not draw a line across
+      // the whole width due the centering of the bars. So here we simply
+      // draw a line which actually does run across the whole width :).
+      svg.append("g")
+          .attr("class", "x axis hack")
+          .append("line")
+          .attr("y1", y(0))
+          .attr("y2", y(0))
+          .attr("x1", 0)
+          .attr("x2", width)
           .call(xAxis);
 
       svg.append("g")
@@ -1184,7 +1186,6 @@ $(document).ready(function(){
     $(this).addClass('active').siblings().removeClass('active');
     var type = this.textContent.toLowerCase() == 'uitgaven' ? 'uitgaven' : 'inkomsten';
     Budget.State.typeTracker = type;
-    //Budget.Display.updateTreemap();
     if(Budget.State.atBudgetLevel()){
       Budget.Display.updateTreemap();
     } else {
