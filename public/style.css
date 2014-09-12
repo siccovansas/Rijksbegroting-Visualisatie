@@ -72,11 +72,11 @@ body {
 .span12 {
 }
 
-.year_picker, .budget_type_picker {
+.year_picker {
   margin-left: -5px;
 }
 
-.year, .budget_type {
+.year {
   padding: 5px;
   background: #556270;
   color: white;
