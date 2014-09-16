@@ -259,12 +259,7 @@ $(document).ready(function(){
         $('.agency').html("<strong>Departement:</strong> " + name);
         this.levelTracker = "agency";
         this.agencyTracker = name;
-      } else if(this.levelTracker = "agency"){
-        $('.bureau').html("<strong>Onderdeel:</strong> " + name);
-        this.levelTracker = "bureau";
-        this.bureauTracker = name;
-      }
-      else {
+      } else {
         this.levelTracker = "budget";
       }
     },
