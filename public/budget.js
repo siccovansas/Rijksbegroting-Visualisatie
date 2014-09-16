@@ -23,8 +23,8 @@ $(document).ready(function(){
       var inflationDivisor = {
         '2012':'1.000',
         '2013':'1.025',
-	'2014':'1.050625',
-	'2015':'1.076890625'
+	'2014':'1.040375',
+	'2015':'1.0528595'
       };
       var years = _.range(2012, 2016);
       _.each(lineItems, function(i){
