@@ -1,268 +1,269 @@
-"Agency Code","Agency Name","Bureau Code","Bureau Name",2012,2013,2014
-I,"De Koning",1,"Grondwettelijke uitkering aan de leden van het koninklijk huis",7216,7277,7614
-I,"De Koning",2,"Functionele uitgaven van de Koning",26682,26995,26779
-I,"De Koning",3,"Doorbelaste uitgaven van andere begrotingen",5597,5661,5594
-IIA,"Staten Generaal",1,"Wetgeving en controle Eerste Kamer",11278,11434,11589
-IIA,"Staten Generaal",2,"Uitgaven ten behoeve van leden en oud-leden Tweede Kamer, alsmede leden van het Europees Parlement",34123,31915,32206
-IIA,"Staten Generaal",3,"Wetgeving en controle Tweede Kamer",93995,93784,93051
-IIA,"Staten Generaal",4,"Wetgeving en controle Eerste en Tweede Kamer",1547,1561,2506
-IIA,"Staten Generaal",10,"Nominaal en onvoorzien",956,-2800,-1252
-IIB,"Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs",1,"Raad van State",56000,57417,59650
-IIB,"Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs",2,"Algemene Rekenkamer",29077,28895,29841
-IIB,"Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs",3,"De Nationale ombudsman",15657,15250,15581
-IIB,"Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs",4,"Kanselarij der Nederlandse Orden",3485,3424,3999
-IIB,"Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs",6,"Kabinet van de Gouverneur van Aruba",1832,1865,1784
-IIB,"Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs",7,"Kabinet van de Gouverneur van Curaçao",2830,2786,2815
-IIB,"Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs",8,"Kabinet van de Gouverneur van Sint Maarten",1886,2119,2043
-IIB,"Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs",10,"Nominaal en onvoorzien",595,191,0
-III,"Algemene zaken",1,"Kabinet van de Koning/Koningin",2372,2402,2331
-III,"Algemene zaken",1,"Eenheid van het algemeen regeringsbeleid",56835,58687,57085
-III,"Algemene zaken",1,"Commissie van toezicht betreffende de inlichtingen- en veiligheidsdiensten",1064,1075,1076
-III,"Algemene zaken",3,"Nominaal en onvoorzien",0,0,0
-IV,Koninkrijksrelaties,1,Waarborgfunctie,63657,63607,61821
-IV,Koninkrijksrelaties,2,"Bevorderen autonomie Koninkrijkspartners",362799,213131,193709
-IV,Koninkrijksrelaties,3,"Nominaal en onvoorzien",1673,805,1223
-V,"Buitenlandse Zaken",1,"Versterkte internationale rechtsorde en eerbiediging van mensenrechten",100562,114886,106237
-V,"Buitenlandse Zaken",2,"Veiligheid en stabiliteit",786801,776500,273466
-V,"Buitenlandse Zaken",3,"Europese samenwerking",7526717,7580467,7824896
-V,"Buitenlandse Zaken",4,"Consulaire belangenbehartiging en het internationaal uitdragen van Nederlandse waarden en belangen",0,0,53291
-V,"Buitenlandse Zaken",4,"Meer welvaart, eerlijkere verdeling en minder armoede",881135,938979,0
-V,"Buitenlandse Zaken",5,"Toegenomen menselijke ontplooiing en sociale ontwikkeling",1088142,1078152,0
-V,"Buitenlandse Zaken",6,"Duurzaam water- en milieubeheer",430620,397960,0
-V,"Buitenlandse Zaken",7,"Welzijn en veiligheid van Nederlanders in het buitenland en regulering van het personenverkeer",25014,24964,0
-V,"Buitenlandse Zaken",8,"Versterkt cultureel profiel en positieve beeldvorming in en buiten Nederland",81892,71982,0
-V,"Buitenlandse Zaken",9,Geheim,0,0,31
-V,"Buitenlandse Zaken",10,"Nominaal en onvoorzien",63535,33597,67011
-V,"Buitenlandse Zaken",11,Apparaat,739203,759974,744195
-VI,"Veiligheid en Justitie",11,"Nederlandse rechtsorde",0,0,0
-VI,"Veiligheid en Justitie",12,"Rechtspleging en rechtsbijstand",1569535,0,0
-VI,"Veiligheid en Justitie",13,"Rechtshandhaving en criminaliteitsbestrijding",3086921,0,0
-VI,"Veiligheid en Justitie",14,Jeugd,889779,0,0
-VI,"Veiligheid en Justitie",17,"Internationale rechtsorde",0,0,0
-VI,"Veiligheid en Justitie",21,"Contraterrorisme- en nationaal veiligheidsbeleid",55406,0,0
-VI,"Veiligheid en Justitie",23,"Veiligheidsregio’s en politie",5466020,0,0
-VI,"Veiligheid en Justitie",25,"Veiligheid en bestuur",33916,0,0
-VI,"Veiligheid en Justitie",29,"Inspectie openbare orde en veiligheid",4583,0,0
-VI,"Veiligheid en Justitie",31,"Nationale Politie",0,5220150,5155411
-VI,"Veiligheid en Justitie",32,"Rechtspleging en rechtsbijstand",0,1522621,1509230
-VI,"Veiligheid en Justitie",33,"Veiligheid en criminaliteitsbestrijding",0,768902,742753
-VI,"Veiligheid en Justitie",34,Sanctietoepassing,0,2242335,2271998
-VI,"Veiligheid en Justitie",35,Jeugd,0,804892,738464
-VI,"Veiligheid en Justitie",36,"Contraterrorisme en Nationaal Veiligheidsbeleid",0,205242,253413
-VI,"Veiligheid en Justitie",37,Vreemdelingen,0,0,681201
-VI,"Veiligheid en Justitie",91,"Apparaatsuitgaven kerndepartement",268022,357813,410369
-VI,"Veiligheid en Justitie",92,"Nominaal en onvoorzien",30482,71917,41965
-VI,"Veiligheid en Justitie",93,Geheim,3074,3057,3057
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",1,"Openbaar bestuur en democratie",22818,25102,32629
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",2,"Algemene Inlichtingen- en Veiligheidsdienst",200328,199621,188892
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",3,Woningmarkt,2786655,2832443,0
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",4,"Woonomgeving en bouw",44033,32639,0
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",5,"Integratie en maatschappelijke samenhang",251233,172387,0
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",6,"Dienstverlenende en innovatieve overheid",125170,125848,104758
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",7,"Arbeidszaken overheid",47192,43177,38897
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",8,"Kwaliteit Rijksdienst",28964,29380,0
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",9,"Uitvoering Rijkshuisvesting",58053,59207,0
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",10,Vreemdelingen,793065,733200,0
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",11,"Centraal apparaat",305445,311023,192827
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",12,Algemeen,14084,4420,2164
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",13,"Nominaal en onvoorzien",32277,11823,1229
-VII,"Binnenlandse Zaken en Koninkrijksrelaties",14,VUT-fonds,100000,210000,70000
-VIII,"Onderwijs, Cultuur en Wetenschap",1,"Primair onderwijs",9635936,9727312,9555294
-VIII,"Onderwijs, Cultuur en Wetenschap",3,"Voortgezet onderwijs",6933960,7074820,7229225
-VIII,"Onderwijs, Cultuur en Wetenschap",4,"Beroepsonderwijs en volwasseneneducatie",3468898,3500665,3802465
-VIII,"Onderwijs, Cultuur en Wetenschap",6,"Hoger beroepsonderwijs",2501470,2464254,2576472
-VIII,"Onderwijs, Cultuur en Wetenschap",7,"Wetenschappelijk onderwijs",3894034,3894582,4033802
-VIII,"Onderwijs, Cultuur en Wetenschap",8,"Internationaal beleid",16890,16969,13421
-VIII,"Onderwijs, Cultuur en Wetenschap",9,"Arbeidsmarkt- en personeelsbeleid",426396,422534,386420
-VIII,"Onderwijs, Cultuur en Wetenschap",11,Studiefinanciering,3746891,4039626,4231184
-VIII,"Onderwijs, Cultuur en Wetenschap",12,"Tegemoetkoming onderwijsbijdrage en schoolkosten",129624,115298,114872
-VIII,"Onderwijs, Cultuur en Wetenschap",13,Lesgelden,6837,7000,7012
-VIII,"Onderwijs, Cultuur en Wetenschap",14,Cultuur,895631,789155,720522
-VIII,"Onderwijs, Cultuur en Wetenschap",15,Media,915954,876224,977571
-VIII,"Onderwijs, Cultuur en Wetenschap",16,"Onderzoek en wetenschapsbeleid",894029,885520,895771
-VIII,"Onderwijs, Cultuur en Wetenschap",25,Emancipatie,16630,15494,14792
-VIII,"Onderwijs, Cultuur en Wetenschap",91,"Nominaal en onvoorzien",0,-818,5367
-VIII,"Onderwijs, Cultuur en Wetenschap",92,"Apparaat Kerndepartement",143920,0,0
-VIII,"Onderwijs, Cultuur en Wetenschap",93,Inspecties,60948,0,0
-VIII,"Onderwijs, Cultuur en Wetenschap",94,Adviesraden,5967,0,0
-VIII,"Onderwijs, Cultuur en Wetenschap",95,Apparaatskosten,0,245973,234723
-IX,"Financiën en Nationale Schuld",1,Belastingen,0,3244427,3297439
-IX,"Financiën en Nationale Schuld",2,"Financiële markten",0,59938,57004
-IX,"Financiën en Nationale Schuld",3,"Financieringsactiviteiten publiek-private sector",0,1994237,1652866
-IX,"Financiën en Nationale Schuld",4,"Internationale financiële betrekkingen",0,2323757,1119514
-IX,"Financiën en Nationale Schuld",5,"Exportkredietverzekeringen,-garanties en investeringsverzekeringen",0,113106,110006
-IX,"Financiën en Nationale Schuld",6,BTW-Compensatiefonds,0,2895357,2816420
-IX,"Financiën en Nationale Schuld",7,"Beheer materiële activa",0,84580,306
-IX,"Financiën en Nationale Schuld",8,"Centraal Apparaat",0,204189,204688
-IX,"Financiën en Nationale Schuld",9,Algemeen,0,0,0
-IX,"Financiën en Nationale Schuld",10,"Nominaal en onvoorzien",0,7008,3425
-IX,"Financiën en Nationale Schuld",11,"Financiering staatsschuld",0,42055423,41562811
-IX,"Financiën en Nationale Schuld",12,Kasbeheer,0,8867626,7178511
-IXA,"Nationale Schuld",1,"Financiering staatsschuld",41071481,0,0
-IXA,"Nationale Schuld",2,Kasbeheer,4657522,0,0
-IXA,"Nationale Schuld",3,"Nominaal en Onvoorzien",0,0,0
-IXB,Financiën,1,Belastingen,3544852,0,0
-IXB,Financiën,2,"Financiële markten",64244,0,0
-IXB,Financiën,3,"Financieringsactiviteiten publiek-private sector",2377720,0,0
-IXB,Financiën,4,"Internationale financiële betrekkingen",1249472,0,0
-IXB,Financiën,5,"Exportkredietverzekering en investeringsgaranties",133106,0,0
-IXB,Financiën,6,BTW-Compensatiefonds,3123921,0,0
-IXB,Financiën,7,"Beheer materiële activa",88111,0,0
-IXB,Financiën,8,"Centraal Apparaat",188261,0,0
-IXB,Financiën,9,Algemeen,0,0,0
-IXB,Financiën,10,"Nominaal en onvoorzien",3386,0,0
-X,Defensie,1,Inzet,0,213150,6250
-X,Defensie,2,"Taakuitvoering zeestrijdkrachten",0,714076,693849
-X,Defensie,3,"Taakuitvoering landstrijdkrachten",0,1135839,1108639
-X,Defensie,4,"Taakuitvoering luchtstrijdkrachten",0,663949,637987
-X,Defensie,5,"Taakuitvoering marechaussee",0,317618,311529
-X,Defensie,6,"Investeringen krijgsmacht",0,1173362,1192309
-X,Defensie,7,"Ondersteuning krijgsmacht door Defensie Materieel Organisatie",0,862466,814171
-X,Defensie,8,"Ondersteuning krijgsmacht door Commando DienstenCentra",0,939434,972277
-X,Defensie,9,Algemeen,0,95502,113716
-X,Defensie,10,"Centraal apparaat",0,1592910,1698315
-X,Defensie,11,"Geheime uitgaven",0,5264,5264
-X,Defensie,12,"Nominaal en onvoorzien",0,63401,47727
-X,Defensie,20,Inzet,197750,0,0
-X,Defensie,21,"Taakuitvoering zeestrijdkrachten",567232,0,0
-X,Defensie,22,"Taakuitvoering landstrijdkrachten",1218614,0,0
-X,Defensie,23,"Taakuitvoering luchtstrijdkrachten",654176,0,0
-X,Defensie,24,"Taakuitvoering marechaussee",372144,0,0
-X,Defensie,25,"Defensie Materieel Organisatie",1966463,0,0
-X,Defensie,26,"Ondersteuning krijgsmacht door Commando DienstenCentra",1059178,0,0
-X,Defensie,70,"Geheime uitgaven",5251,0,0
-X,Defensie,80,"Nominaal en onvoorzien",146908,0,0
-X,Defensie,90,Algemeen,202650,0,0
-X,Defensie,91,"Centraal apparaat",1475982,0,0
-XII,"Infrastructuur en Milieu",11,Waterkwantiteit,0,40946,39731
-XII,"Infrastructuur en Milieu",12,Waterkwaliteit,0,100756,85558
-XII,"Infrastructuur en Milieu",13,"Ruimtelijke ontwikkeling",0,147634,105979
-XII,"Infrastructuur en Milieu",14,"Wegen en verkeersveiligheid",0,40405,33119
-XII,"Infrastructuur en Milieu",15,"Openbaar vervoer",0,8316,7531
-XII,"Infrastructuur en Milieu",16,Spoor,0,38049,24424
-XII,"Infrastructuur en Milieu",17,Luchtvaart,0,23341,34291
-XII,"Infrastructuur en Milieu",18,"Scheepvaart en havens",0,6464,5303
-XII,"Infrastructuur en Milieu",19,Klimaat,0,92943,59422
-XII,"Infrastructuur en Milieu",20,"Lucht en geluid",0,78823,49383
-XII,"Infrastructuur en Milieu",21,Duurzaamheid,0,44601,13530
-XII,"Infrastructuur en Milieu",22,"Externe veiligheid en risico's",0,17233,28134
-XII,"Infrastructuur en Milieu",23,"Meteorologie, seismologie en aardobservatie",0,46310,33926
-XII,"Infrastructuur en Milieu",24,"Handhaving en toezicht",0,136654,129559
-XII,"Infrastructuur en Milieu",25,"Brede doeluitkering",0,1795605,1819189
-XII,"Infrastructuur en Milieu",26,"Bijdrage Investeringsfondsen",0,6761720,7452327
-XII,"Infrastructuur en Milieu",31,"Integraal waterbeleid",50916,0,0
-XII,"Infrastructuur en Milieu",32,"Het bereiken van optimale veiligheid in of als gevolg van mobiliteit",26849,0,0
-XII,"Infrastructuur en Milieu",33,"Veiligheid gericht op de beheersing van veiligheidsrisico's",10655,0,0
-XII,"Infrastructuur en Milieu",34,"Betrouwbare netwerken, voorspelbare reistijden en een goede bereikbaarheid",58697,0,0
-XII,"Infrastructuur en Milieu",35,"Mainports en logistiek",21644,0,0
-XII,"Infrastructuur en Milieu",36,"Bewaken, waarborgen en verbeteren van kwaliteit leefomgeving, gegeven de toename van mobiliteit",61098,0,0
-XII,"Infrastructuur en Milieu",37,"Weer, klimaat, seismologie en aardobservatie",41950,0,0
-XII,"Infrastructuur en Milieu",38,"Inspectie Leefomgeving en Milieu",145251,0,0
-XII,"Infrastructuur en Milieu",39,"Bijdragen Infrastructuurfonds en BDU",9383403,0,0
-XII,"Infrastructuur en Milieu",40,"Nominaal en onvoorzien",0,0,0
-XII,"Infrastructuur en Milieu",41,"Ondersteunen functioneren IenM",34152,0,0
-XII,"Infrastructuur en Milieu",51,"Optimalisering van de ruimtelijke afweging",46931,0,0
-XII,"Infrastructuur en Milieu",52,"Realisatie Nationaal Ruimtelijk Beleid",68272,0,0
-XII,"Infrastructuur en Milieu",53,"Klimaat en luchtkwaliteit",74454,0,0
-XII,"Infrastructuur en Milieu",54,"Duurzaam produceren",110158,0,0
-XII,"Infrastructuur en Milieu",56,Risicobeleid,40341,0,0
-XII,"Infrastructuur en Milieu",57,"Versterken van het internationale beleid",145519,0,0
-XII,"Infrastructuur en Milieu",59,"Handhaving en toezicht",0,0,0
-XII,"Infrastructuur en Milieu",60,Leefomgevingskwaliteit,90481,0,0
-XII,"Infrastructuur en Milieu",61,Algemeen,0,0,0
-XII,"Infrastructuur en Milieu",62,"Nominaal en onvoorzien",0,0,0
-XII,"Infrastructuur en Milieu",97,"Algemeen departement",0,23429,27206
-XII,"Infrastructuur en Milieu",98,"Apparaatsuitgaven Kerndepartement",398586,350087,319700
-XII,"Infrastructuur en Milieu",99,"Nominaal en onvoorzien",-3461,157181,-14543
-XIII,"Economische Zaken",11,"Goed functionerende economie en markten",232037,219931,197794
-XIII,"Economische Zaken",12,"Een sterk innovatievermogen",814158,795764,814790
-XIII,"Economische Zaken",13,"Een excellent ondernemingsklimaat",242178,366134,319466
-XIII,"Economische Zaken",14,"Een doelmatige en duurzame energievoorziening",1337643,1312815,1538633
-XIII,"Economische Zaken",15,"Een sterke internationale concurrentiepositie",132664,112104,0
-XIII,"Economische Zaken",16,"Concurrerende, duurzame, veilige agro-, visserij- en voedselketens",555985,517397,565726
-XIII,"Economische Zaken",17,"Groen onderwijs van hoge kwaliteit",780891,776575,795701
-XIII,"Economische Zaken",18,"Natuur en Regio",837888,689737,432349
-XIII,"Economische Zaken",40,Apparaat,448098,408944,367581
-XIII,"Economische Zaken",41,"Nominaal en Onvoorzien",-8788,29773,250
-XV,"Sociale Zaken en Werkgelegenheid",1,Arbeidsmarkt,0,24272,19665
-XV,"Sociale Zaken en Werkgelegenheid",2,"Bijstand, Toeslagenwet en Sociale Werkvoorziening",0,9230038,10578354
-XV,"Sociale Zaken en Werkgelegenheid",3,Arbeidsongeschiktheid,0,472,649
-XV,"Sociale Zaken en Werkgelegenheid",4,Jonggehandicapten,0,2606167,2952962
-XV,"Sociale Zaken en Werkgelegenheid",5,Werkloosheid,0,5122,32444
-XV,"Sociale Zaken en Werkgelegenheid",6,"Ziekte en zwangerschap",0,5164,6805
-XV,"Sociale Zaken en Werkgelegenheid",7,Kinderopvang,0,2696970,2402197
-XV,"Sociale Zaken en Werkgelegenheid",8,Oudedagsvoorziening,0,958574,1053343
-XV,"Sociale Zaken en Werkgelegenheid",9,Nabestaanden,0,937,964
-XV,"Sociale Zaken en Werkgelegenheid",10,"Tegemoetkoming ouders",0,4293755,4486790
-XV,"Sociale Zaken en Werkgelegenheid",11,Uitvoeringskosten,0,432859,481338
-XV,"Sociale Zaken en Werkgelegenheid",12,Rijksbijdragen,0,9556131,11102706
-XV,"Sociale Zaken en Werkgelegenheid",13,"Integratie en maatschappelijke samenhang",0,0,121521
-XV,"Sociale Zaken en Werkgelegenheid",41,Inkomensbeleid,822,0,0
-XV,"Sociale Zaken en Werkgelegenheid",42,Arbeidsparticipatie,1123,0,0
-XV,"Sociale Zaken en Werkgelegenheid",43,Arbeidsverhoudingen,4189,0,0
-XV,"Sociale Zaken en Werkgelegenheid",44,"Gezond en veilig werken",18057,0,0
-XV,"Sociale Zaken en Werkgelegenheid",45,Pensioenbeleid,820,0,0
-XV,"Sociale Zaken en Werkgelegenheid",46,"Inkomensbescherming met activering",6936031,0,0
-XV,"Sociale Zaken en Werkgelegenheid",47,"Aan het werk: Bemiddeling en Re-integratie",1466065,0,0
-XV,"Sociale Zaken en Werkgelegenheid",48,"Sociale werkvoorziening",2404122,0,0
-XV,"Sociale Zaken en Werkgelegenheid",49,"Overige inkomensbescherming",632673,0,0
-XV,"Sociale Zaken en Werkgelegenheid",50,"Tegemoetkoming specifieke kosten",5512933,0,0
-XV,"Sociale Zaken en Werkgelegenheid",51,"Rijksbijdragen aan sociale fondsen",10788746,0,0
-XV,"Sociale Zaken en Werkgelegenheid",52,Kinderopvang,2961078,0,0
-XV,"Sociale Zaken en Werkgelegenheid",96,"Apparaatsuitgaven kerndepartement",236391,240603,285829
-XV,"Sociale Zaken en Werkgelegenheid",97,"Aflopende regelingen",2633,0,0
-XV,"Sociale Zaken en Werkgelegenheid",98,Algemeen,38481,67028,48804
-XV,"Sociale Zaken en Werkgelegenheid",99,"Nominaal en onvoorzien",61852,107152,181517
-XVI,"Volksgezondheid, Welzijn en Sport",1,Volksgezondheid,0,515780,497952
-XVI,"Volksgezondheid, Welzijn en Sport",2,"Curatieve zorg",0,2796291,2733958
-XVI,"Volksgezondheid, Welzijn en Sport",3,"Langdurige zorg en ondersteuning",0,4142604,4193291
-XVI,"Volksgezondheid, Welzijn en Sport",4,"Zorgbreed beleid",0,757374,697717
-XVI,"Volksgezondheid, Welzijn en Sport",5,Jeugd,0,1533547,1551126
-XVI,"Volksgezondheid, Welzijn en Sport",6,"Sport en bewegen",0,135000,132421
-XVI,"Volksgezondheid, Welzijn en Sport",7,"Oorlogsgetroffenen en herinnering Wereldoorlog II",0,331574,327802
-XVI,"Volksgezondheid, Welzijn en Sport",8,"Tegemoetkoming specifieke kosten",0,5272231,4466171
-XVI,"Volksgezondheid, Welzijn en Sport",9,Algemeen,0,27936,30748
-XVI,"Volksgezondheid, Welzijn en Sport",10,Apparaatsuitgaven,0,225639,222775
-XVI,"Volksgezondheid, Welzijn en Sport",11,"Nominaal en onvoorzien",0,-26659,-36814
-XVI,"Volksgezondheid, Welzijn en Sport",41,Volksgezondheid,630570,0,0
-XVI,"Volksgezondheid, Welzijn en Sport",42,Gezondheidszorg,8163594,0,0
-XVI,"Volksgezondheid, Welzijn en Sport",43,"Langdurige zorg",6391860,0,0
-XVI,"Volksgezondheid, Welzijn en Sport",44,"Maatschappelijke ondersteuning",212152,0,0
-XVI,"Volksgezondheid, Welzijn en Sport",45,Jeugd,1488585,0,0
-XVI,"Volksgezondheid, Welzijn en Sport",46,"Sport en bewegen",128976,0,0
-XVI,"Volksgezondheid, Welzijn en Sport",47,"Oorlogsgetroffenen en Herinnering Wereldoorlog II",342776,0,0
-XVI,"Volksgezondheid, Welzijn en Sport",97,Algemeen,33122,0,0
-XVI,"Volksgezondheid, Welzijn en Sport",98,Apparaatsuitgaven,228503,0,0
-XVI,"Volksgezondheid, Welzijn en Sport",99,"Nominaal en onvoorzien",-55162,0,0
-XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",1,"Duurzame handel en investeringen",0,0,463256
-XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",1,"Een sterke internationale concurrentiepositie",0,89197,0
-XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",2,"Duurzame ontwikkeling, voedselzekerheid en water",0,0,581953
-XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",3,"Sociale vooruitgang",0,0,985987
-XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",4,"Vrede en veiligheid voor ontwikkeling",0,0,685469
-XVII,"Buitenlandse Handel en Ontwikkelingssamenwerking",5,"Versterkte kaders voor ontwikkeling",0,0,79011
-XVIII,"Wonen en Rijksdienst",1,Woningmarkt,0,2880443,3031676
-XVIII,"Wonen en Rijksdienst",2,"Woonomgeving en bouw",0,32639,176384
-XVIII,"Wonen en Rijksdienst",3,"Kwaliteit Rijksdienst",0,29380,17896
-XVIII,"Wonen en Rijksdienst",4,"Uitvoering Rijkshuisvesting",0,59207,0
-XVIII,"Wonen en Rijksdienst",5,"Beheer materiële activa",0,84280,0
-XVIII,"Wonen en Rijksdienst",6,"Uitvoering rijksvastgoedbeleid",0,0,144826
-XVIII,"Wonen en Rijksdienst",10,"Nominaal en onderverdeeld",0,0,0
-A,Infrastructuurfonds,11,Hoofdwatersystemen,617781,0,0
-A,Infrastructuurfonds,12,Hoofdwegennet,2457595,2728863,2800084
-A,Infrastructuurfonds,13,Spoorwegen,2445684,2197753,2397939
-A,Infrastructuurfonds,14,"Regionaal, lokale infrastructuur",329348,135983,241969
-A,Infrastructuurfonds,15,Hoofdvaarwegennet,843656,844120,895163
-A,Infrastructuurfonds,16,"Megaprojecten niet-Verkeer en Vervoer",861154,0,0
-A,Infrastructuurfonds,17,"Megaprojecten Verkeer en Vervoer",10000,54157,24368
-A,Infrastructuurfonds,18,"Overige uitgaven en ontvangsten",421460,273614,235032
-A,Infrastructuurfonds,19,"Bijdragen andere begrotingen Rijk",0,0,0
-B,Gemeentefonds,1,gemeentefonds,18334127,17963120,18381232
-C,Provinciefonds,1,provinciefonds,1116489,1138214,1171987
-F,Diergezondheidsfonds,1,"Bewaking en bestrijding van dierziekten en voorkomen en verminderen van welzijnsproblemen",9700,9700,10900
-H,BES-fonds,1,BES-fonds,24903,32093,32709
-J,Deltafonds,1,"Investeren in waterveiligheid",0,536712,827890
-J,Deltafonds,2,"Investeren in zoetwatervoorziening",0,32117,3863
-J,Deltafonds,3,"Beheer, onderhoud en vervanging",0,156150,176257
-J,Deltafonds,4,"Experimenteren cf. art. III Deltawet",0,0,0
-J,Deltafonds,5,"Netwerkgebonden kosten en overige uitgaven",0,247581,222828
-J,Deltafonds,6,"Bijdragen andere begrotingen Rijk",0,0,0
+Agency Code,Agency Name,Bureau Code,Bureau Name,2012,2013,2014,2015
+I,De Koning,1,Grondwettelijke uitkering aan de leden van het koninklijk huis,7216,7277,7614,7659
+I,De Koning,2,Functionele uitgaven van de Koning,26682,26995,26779,26826
+I,De Koning,3,Doorbelaste uitgaven van andere begrotingen,5597,5661,5594,5600
+IIA,Staten Generaal,1,Wetgeving en controle Eerste Kamer,11278,11434,11589,11670
+IIA,Staten Generaal,2,"Uitgaven ten behoeve van leden en oud-leden Tweede Kamer, alsmede leden van het Europees Parlement",34123,31915,32206,29232
+IIA,Staten Generaal,3,Wetgeving en controle Tweede Kamer,93995,93784,93051,96115
+IIA,Staten Generaal,4,Wetgeving en controle Eerste en Tweede Kamer,1547,1561,2506,1493
+IIA,Staten Generaal,10,Nominaal en onvoorzien,956,-2800,-1252,-1573
+IIB,Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs,1,Raad van State,56000,57417,59650,59034
+IIB,Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs,2,Algemene Rekenkamer,29077,28895,29841,28750
+IIB,Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs,3,De Nationale ombudsman,15657,15250,15581,15461
+IIB,Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs,4,Kanselarij der Nederlandse Orden,3485,3424,3999,3975
+IIB,Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs,6,Kabinet van de Gouverneur van Aruba,1832,1865,1784,1795
+IIB,Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs,7,Kabinet van de Gouverneur van Curaçao,2830,2786,2815,2735
+IIB,Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs,8,Kabinet van de Gouverneur van Sint Maarten,1886,2119,2043,2058
+IIB,Overige Hoge Colleges van Staat en Kabinetten van de Gouverneurs,10,Nominaal en onvoorzien,595,191,0,0
+III,Algemene zaken,1,Kabinet van de Koning/Koningin,2372,2402,2331,2338
+III,Algemene zaken,1,Eenheid van het algemeen regeringsbeleid,56835,58687,57085,59429
+III,Algemene zaken,1,Commissie van toezicht betreffende de inlichtingen- en veiligheidsdiensten,1064,1075,1076,1078
+III,Algemene zaken,3,Nominaal en onvoorzien,0,0,0,0
+IV,Koninkrijksrelaties,1,Waarborgfunctie,63657,63607,61821,61553
+IV,Koninkrijksrelaties,2,Bevorderen autonomie Koninkrijkspartners,362799,213131,193709,196552
+IV,Koninkrijksrelaties,3,Nominaal en onvoorzien,1673,805,1223,803
+V,Buitenlandse Zaken,1,Versterkte internationale rechtsorde en eerbiediging van mensenrechten,100562,114886,106237,111701
+V,Buitenlandse Zaken,2,Veiligheid en stabiliteit,786801,776500,273466,251622
+V,Buitenlandse Zaken,3,Europese samenwerking,7526717,7580467,7824896,6680065
+V,Buitenlandse Zaken,4,Consulaire belangenbehartiging en het internationaal uitdragen van Nederlandse waarden en belangen,0,0,53291,53220
+V,Buitenlandse Zaken,4,"Meer welvaart, eerlijkere verdeling en minder armoede",881135,938979,0,0
+V,Buitenlandse Zaken,5,Toegenomen menselijke ontplooiing en sociale ontwikkeling,1088142,1078152,0,0
+V,Buitenlandse Zaken,6,Duurzaam water- en milieubeheer,430620,397960,0,0
+V,Buitenlandse Zaken,7,Welzijn en veiligheid van Nederlanders in het buitenland en regulering van het personenverkeer,25014,24964,0,0
+V,Buitenlandse Zaken,8,Versterkt cultureel profiel en positieve beeldvorming in en buiten Nederland,81892,71982,0,0
+V,Buitenlandse Zaken,9,Geheim,0,0,31,0
+V,Buitenlandse Zaken,10,Nominaal en onvoorzien,63535,33597,67011,25018
+V,Buitenlandse Zaken,11,Apparaat,739203,759974,744195,752864
+VI,Veiligheid en Justitie,11,Nederlandse rechtsorde,0,0,0,0
+VI,Veiligheid en Justitie,12,Rechtspleging en rechtsbijstand,1569535,0,0,0
+VI,Veiligheid en Justitie,13,Rechtshandhaving en criminaliteitsbestrijding,3086921,0,0,0
+VI,Veiligheid en Justitie,14,Jeugd,889779,0,0,0
+VI,Veiligheid en Justitie,17,Internationale rechtsorde,0,0,0,0
+VI,Veiligheid en Justitie,21,Contraterrorisme- en nationaal veiligheidsbeleid,55406,0,0,0
+VI,Veiligheid en Justitie,23,Veiligheidsregio’s en politie,5466020,0,0,0
+VI,Veiligheid en Justitie,25,Veiligheid en bestuur,33916,0,0,0
+VI,Veiligheid en Justitie,29,Inspectie openbare orde en veiligheid,4583,0,0,0
+VI,Veiligheid en Justitie,31,Nationale Politie,0,5220150,5155411,5132936
+VI,Veiligheid en Justitie,32,Rechtspleging en rechtsbijstand,0,1522621,1509230,1439713
+VI,Veiligheid en Justitie,33,Veiligheid en criminaliteitsbestrijding,0,768902,742753,662722
+VI,Veiligheid en Justitie,34,Sanctietoepassing,0,2242335,2271998,2416080
+VI,Veiligheid en Justitie,35,Jeugd,0,804892,738464,372566
+VI,Veiligheid en Justitie,36,Contraterrorisme en Nationaal Veiligheidsbeleid,0,205242,253413,248052
+VI,Veiligheid en Justitie,37,Vreemdelingen,0,0,681201,757030
+VI,Veiligheid en Justitie,91,Apparaatsuitgaven kerndepartement,268022,357813,410369,403038
+VI,Veiligheid en Justitie,92,Nominaal en onvoorzien,30482,71917,41965,2218
+VI,Veiligheid en Justitie,93,Geheim,3074,3057,3057,3058
+VII,Binnenlandse Zaken en Koninkrijksrelaties,1,Openbaar bestuur en democratie,22818,25102,32629,30383
+VII,Binnenlandse Zaken en Koninkrijksrelaties,2,Algemene Inlichtingen- en Veiligheidsdienst,200328,199621,188892,212743
+VII,Binnenlandse Zaken en Koninkrijksrelaties,3,Woningmarkt,2786655,2832443,0,0
+VII,Binnenlandse Zaken en Koninkrijksrelaties,4,Woonomgeving en bouw,44033,32639,0,0
+VII,Binnenlandse Zaken en Koninkrijksrelaties,5,Integratie en maatschappelijke samenhang,251233,172387,0,0
+VII,Binnenlandse Zaken en Koninkrijksrelaties,6,Dienstverlenende en innovatieve overheid,125170,125848,104758,88885
+VII,Binnenlandse Zaken en Koninkrijksrelaties,7,Arbeidszaken overheid,47192,43177,38897,35546
+VII,Binnenlandse Zaken en Koninkrijksrelaties,8,Kwaliteit Rijksdienst,28964,29380,0,0
+VII,Binnenlandse Zaken en Koninkrijksrelaties,9,Uitvoering Rijkshuisvesting,58053,59207,0,0
+VII,Binnenlandse Zaken en Koninkrijksrelaties,10,Vreemdelingen,793065,733200,0,0
+VII,Binnenlandse Zaken en Koninkrijksrelaties,11,Centraal apparaat,305445,311023,192827,252326
+VII,Binnenlandse Zaken en Koninkrijksrelaties,12,Algemeen,14084,4420,2164,3689
+VII,Binnenlandse Zaken en Koninkrijksrelaties,13,Nominaal en onvoorzien,32277,11823,1229,10554
+VII,Binnenlandse Zaken en Koninkrijksrelaties,14,VUT-fonds,100000,210000,70000,0
+VIII,"Onderwijs, Cultuur en Wetenschap",1,Primair onderwijs,9635936,9727312,9555294,9963954
+VIII,"Onderwijs, Cultuur en Wetenschap",3,Voortgezet onderwijs,6933960,7074820,7229225,7480508
+VIII,"Onderwijs, Cultuur en Wetenschap",4,Beroepsonderwijs en volwasseneneducatie,3468898,3500665,3802465,4107238
+VIII,"Onderwijs, Cultuur en Wetenschap",6,Hoger beroepsonderwijs,2501470,2464254,2576472,2774109
+VIII,"Onderwijs, Cultuur en Wetenschap",7,Wetenschappelijk onderwijs,3894034,3894582,4033802,4145632
+VIII,"Onderwijs, Cultuur en Wetenschap",8,Internationaal beleid,16890,16969,13421,11235
+VIII,"Onderwijs, Cultuur en Wetenschap",9,Arbeidsmarkt- en personeelsbeleid,426396,422534,386420,249541
+VIII,"Onderwijs, Cultuur en Wetenschap",11,Studiefinanciering,3746891,4039626,4231184,4246402
+VIII,"Onderwijs, Cultuur en Wetenschap",12,Tegemoetkoming onderwijsbijdrage en schoolkosten,129624,115298,114872,89214
+VIII,"Onderwijs, Cultuur en Wetenschap",13,Lesgelden,6837,7000,7012,7515
+VIII,"Onderwijs, Cultuur en Wetenschap",14,Cultuur,895631,789155,720522,733744
+VIII,"Onderwijs, Cultuur en Wetenschap",15,Media,915954,876224,977571,996406
+VIII,"Onderwijs, Cultuur en Wetenschap",16,Onderzoek en wetenschapsbeleid,894029,885520,895771,973046
+VIII,"Onderwijs, Cultuur en Wetenschap",25,Emancipatie,16630,15494,14792,15172
+VIII,"Onderwijs, Cultuur en Wetenschap",91,Nominaal en onvoorzien,0,-818,5367,1355
+VIII,"Onderwijs, Cultuur en Wetenschap",92,Apparaat Kerndepartement,143920,0,0,0
+VIII,"Onderwijs, Cultuur en Wetenschap",93,Inspecties,60948,0,0,0
+VIII,"Onderwijs, Cultuur en Wetenschap",94,Adviesraden,5967,0,0,0
+VIII,"Onderwijs, Cultuur en Wetenschap",95,Apparaatskosten,0,245973,234723,247052
+IX,Financiën en Nationale Schuld,1,Belastingen,0,3244427,3297439,3222131
+IX,Financiën en Nationale Schuld,2,Financiële markten,0,59938,57004,21500
+IX,Financiën en Nationale Schuld,3,Financieringsactiviteiten publiek-private sector,0,1994237,1652866,19314
+IX,Financiën en Nationale Schuld,4,Internationale financiële betrekkingen,0,2323757,1119514,384077
+IX,Financiën en Nationale Schuld,5,"Exportkredietverzekeringen,-garanties en investeringsverzekeringen",0,113106,110006,88058
+IX,Financiën en Nationale Schuld,6,BTW-Compensatiefonds,0,2895357,2816420,2901122
+IX,Financiën en Nationale Schuld,7,Beheer materiële activa,0,84580,306,306
+IX,Financiën en Nationale Schuld,8,Centraal Apparaat,0,204189,204688,236162
+IX,Financiën en Nationale Schuld,9,Algemeen,0,0,0,0
+IX,Financiën en Nationale Schuld,10,Nominaal en onvoorzien,0,7008,3425,50043
+IX,Financiën en Nationale Schuld,11,Financiering staatsschuld,0,42055423,41562811,50473791
+IX,Financiën en Nationale Schuld,12,Kasbeheer,0,8867626,7178511,4358796
+IXA,Nationale Schuld,1,Financiering staatsschuld,41071481,0,0,0
+IXA,Nationale Schuld,2,Kasbeheer,4657522,0,0,0
+IXA,Nationale Schuld,3,Nominaal en Onvoorzien,0,0,0,0
+IXB,Financiën,1,Belastingen,3544852,0,0,0
+IXB,Financiën,2,Financiële markten,64244,0,0,0
+IXB,Financiën,3,Financieringsactiviteiten publiek-private sector,2377720,0,0,0
+IXB,Financiën,4,Internationale financiële betrekkingen,1249472,0,0,0
+IXB,Financiën,5,Exportkredietverzekering en investeringsgaranties,133106,0,0,0
+IXB,Financiën,6,BTW-Compensatiefonds,3123921,0,0,0
+IXB,Financiën,7,Beheer materiële activa,88111,0,0,0
+IXB,Financiën,8,Centraal Apparaat,188261,0,0,0
+IXB,Financiën,9,Algemeen,0,0,0,0
+IXB,Financiën,10,Nominaal en onvoorzien,3386,0,0,0
+X,Defensie,1,Inzet,0,213150,6250,304026
+X,Defensie,2,Taakuitvoering zeestrijdkrachten,0,714076,693849,696160
+X,Defensie,3,Taakuitvoering landstrijdkrachten,0,1135839,1108639,1121002
+X,Defensie,4,Taakuitvoering luchtstrijdkrachten,0,663949,637987,644308
+X,Defensie,5,Taakuitvoering marechaussee,0,317618,311529,311472
+X,Defensie,6,Investeringen krijgsmacht,0,1173362,1192309,1408438
+X,Defensie,7,Ondersteuning krijgsmacht door Defensie Materieel Organisatie,0,862466,814171,742400
+X,Defensie,8,Ondersteuning krijgsmacht door Commando DienstenCentra,0,939434,972277,1037650
+X,Defensie,9,Algemeen,0,95502,113716,102460
+X,Defensie,10,Centraal apparaat,0,1592910,1698315,1599771
+X,Defensie,11,Geheime uitgaven,0,5264,5264,5339
+X,Defensie,12,Nominaal en onvoorzien,0,63401,47727,27337
+X,Defensie,20,Inzet,197750,0,0,0
+X,Defensie,21,Taakuitvoering zeestrijdkrachten,567232,0,0,0
+X,Defensie,22,Taakuitvoering landstrijdkrachten,1218614,0,0,0
+X,Defensie,23,Taakuitvoering luchtstrijdkrachten,654176,0,0,0
+X,Defensie,24,Taakuitvoering marechaussee,372144,0,0,0
+X,Defensie,25,Defensie Materieel Organisatie,1966463,0,0,0
+X,Defensie,26,Ondersteuning krijgsmacht door Commando DienstenCentra,1059178,0,0,0
+X,Defensie,70,Geheime uitgaven,5251,0,0,0
+X,Defensie,80,Nominaal en onvoorzien,146908,0,0,0
+X,Defensie,90,Algemeen,202650,0,0,0
+X,Defensie,91,Centraal apparaat,1475982,0,0,0
+XII,Infrastructuur en Milieu,11,Waterkwantiteit,0,40946,39731,37847
+XII,Infrastructuur en Milieu,12,Waterkwaliteit,0,100756,85558,6225
+XII,Infrastructuur en Milieu,13,Ruimtelijke ontwikkeling,0,147634,105979,194736
+XII,Infrastructuur en Milieu,14,Wegen en verkeersveiligheid,0,40405,33119,32043
+XII,Infrastructuur en Milieu,15,Openbaar vervoer,0,8316,7531,6021
+XII,Infrastructuur en Milieu,16,Spoor,0,38049,24424,28785
+XII,Infrastructuur en Milieu,17,Luchtvaart,0,23341,34291,23759
+XII,Infrastructuur en Milieu,18,Scheepvaart en havens,0,6464,5303,4732
+XII,Infrastructuur en Milieu,19,Klimaat,0,92943,59422,59915
+XII,Infrastructuur en Milieu,20,Lucht en geluid,0,78823,49383,36450
+XII,Infrastructuur en Milieu,21,Duurzaamheid,0,44601,13530,20493
+XII,Infrastructuur en Milieu,22,Externe veiligheid en risico's,0,17233,28134,43846
+XII,Infrastructuur en Milieu,23,"Meteorologie, seismologie en aardobservatie",0,46310,33926,39914
+XII,Infrastructuur en Milieu,24,Handhaving en toezicht,0,136654,129559,110047
+XII,Infrastructuur en Milieu,25,Brede doeluitkering,0,1795605,1819189,1782405
+XII,Infrastructuur en Milieu,26,Bijdrage Investeringsfondsen,0,6761720,7452327,6453944
+XII,Infrastructuur en Milieu,31,Integraal waterbeleid,50916,0,0,0
+XII,Infrastructuur en Milieu,32,Het bereiken van optimale veiligheid in of als gevolg van mobiliteit,26849,0,0,0
+XII,Infrastructuur en Milieu,33,Veiligheid gericht op de beheersing van veiligheidsrisico's,10655,0,0,0
+XII,Infrastructuur en Milieu,34,"Betrouwbare netwerken, voorspelbare reistijden en een goede bereikbaarheid",58697,0,0,0
+XII,Infrastructuur en Milieu,35,Mainports en logistiek,21644,0,0,0
+XII,Infrastructuur en Milieu,36,"Bewaken, waarborgen en verbeteren van kwaliteit leefomgeving, gegeven de toename van mobiliteit",61098,0,0,0
+XII,Infrastructuur en Milieu,37,"Weer, klimaat, seismologie en aardobservatie",41950,0,0,0
+XII,Infrastructuur en Milieu,38,Inspectie Leefomgeving en Milieu,145251,0,0,0
+XII,Infrastructuur en Milieu,39,Bijdragen Infrastructuurfonds en BDU,9383403,0,0,0
+XII,Infrastructuur en Milieu,40,Nominaal en onvoorzien,0,0,0,0
+XII,Infrastructuur en Milieu,41,Ondersteunen functioneren IenM,34152,0,0,0
+XII,Infrastructuur en Milieu,51,Optimalisering van de ruimtelijke afweging,46931,0,0,0
+XII,Infrastructuur en Milieu,52,Realisatie Nationaal Ruimtelijk Beleid,68272,0,0,0
+XII,Infrastructuur en Milieu,53,Klimaat en luchtkwaliteit,74454,0,0,0
+XII,Infrastructuur en Milieu,54,Duurzaam produceren,110158,0,0,0
+XII,Infrastructuur en Milieu,56,Risicobeleid,40341,0,0,0
+XII,Infrastructuur en Milieu,57,Versterken van het internationale beleid,145519,0,0,0
+XII,Infrastructuur en Milieu,59,Handhaving en toezicht,0,0,0,0
+XII,Infrastructuur en Milieu,60,Leefomgevingskwaliteit,90481,0,0,0
+XII,Infrastructuur en Milieu,61,Algemeen,0,0,0,0
+XII,Infrastructuur en Milieu,62,Nominaal en onvoorzien,0,0,0,0
+XII,Infrastructuur en Milieu,97,Algemeen departement,0,23429,27206,45445
+XII,Infrastructuur en Milieu,98,Apparaatsuitgaven Kerndepartement,398586,350087,319700,300273
+XII,Infrastructuur en Milieu,99,Nominaal en onvoorzien,-3461,157181,-14543,8593
+XIII,Economische Zaken,11,Goed functionerende economie en markten,232037,219931,197794,192483
+XIII,Economische Zaken,12,Een sterk innovatievermogen,814158,795764,814790,695025
+XIII,Economische Zaken,13,Een excellent ondernemingsklimaat,242178,366134,319466,306921
+XIII,Economische Zaken,14,Een doelmatige en duurzame energievoorziening,1337643,1312815,1538633,1619026
+XIII,Economische Zaken,15,Een sterke internationale concurrentiepositie,132664,112104,0,0
+XIII,Economische Zaken,16,"Concurrerende, duurzame, veilige agro-, visserij- en voedselketens",555985,517397,565726,585628
+XIII,Economische Zaken,17,Groen onderwijs van hoge kwaliteit,780891,776575,795701,829465
+XIII,Economische Zaken,18,Natuur en Regio,837888,689737,432349,293151
+XIII,Economische Zaken,40,Apparaat,448098,408944,367581,349016
+XIII,Economische Zaken,41,Nominaal en Onvoorzien,-8788,29773,250,0
+XV,Sociale Zaken en Werkgelegenheid,1,Arbeidsmarkt,0,24272,19665,17525
+XV,Sociale Zaken en Werkgelegenheid,2,"Bijstand, Toeslagenwet en Sociale Werkvoorziening",0,9230038,10578354,6529723
+XV,Sociale Zaken en Werkgelegenheid,3,Arbeidsongeschiktheid,0,472,649,604
+XV,Sociale Zaken en Werkgelegenheid,4,Jonggehandicapten,0,2606167,2952962,3113430
+XV,Sociale Zaken en Werkgelegenheid,5,Werkloosheid,0,5122,32444,41859
+XV,Sociale Zaken en Werkgelegenheid,6,Ziekte en zwangerschap,0,5164,6805,6743
+XV,Sociale Zaken en Werkgelegenheid,7,Kinderopvang,0,2696970,2402197,2408446
+XV,Sociale Zaken en Werkgelegenheid,8,Oudedagsvoorziening,0,958574,1053343,31890
+XV,Sociale Zaken en Werkgelegenheid,9,Nabestaanden,0,937,964,829
+XV,Sociale Zaken en Werkgelegenheid,10,Tegemoetkoming ouders,0,4293755,4486790,5389722
+XV,Sociale Zaken en Werkgelegenheid,11,Uitvoeringskosten,0,432859,481338,462130
+XV,Sociale Zaken en Werkgelegenheid,12,Rijksbijdragen,0,9556131,11102706,13952163
+XV,Sociale Zaken en Werkgelegenheid,13,Integratie en maatschappelijke samenhang,0,0,121521,123166
+XV,Sociale Zaken en Werkgelegenheid,41,Inkomensbeleid,822,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,42,Arbeidsparticipatie,1123,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,43,Arbeidsverhoudingen,4189,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,44,Gezond en veilig werken,18057,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,45,Pensioenbeleid,820,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,46,Inkomensbescherming met activering,6936031,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,47,Aan het werk: Bemiddeling en Re-integratie,1466065,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,48,Sociale werkvoorziening,2404122,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,49,Overige inkomensbescherming,632673,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,50,Tegemoetkoming specifieke kosten,5512933,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,51,Rijksbijdragen aan sociale fondsen,10788746,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,52,Kinderopvang,2961078,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,96,Apparaatsuitgaven kerndepartement,236391,240603,285829,277741
+XV,Sociale Zaken en Werkgelegenheid,97,Aflopende regelingen,2633,0,0,0
+XV,Sociale Zaken en Werkgelegenheid,98,Algemeen,38481,67028,48804,46326
+XV,Sociale Zaken en Werkgelegenheid,99,Nominaal en onvoorzien,61852,107152,181517,19383
+XVI,"Volksgezondheid, Welzijn en Sport",1,Volksgezondheid,0,515780,497952,642082
+XVI,"Volksgezondheid, Welzijn en Sport",2,Curatieve zorg,0,2796291,2733958,4660890
+XVI,"Volksgezondheid, Welzijn en Sport",3,Langdurige zorg en ondersteuning,0,4142604,4193291,3578197
+XVI,"Volksgezondheid, Welzijn en Sport",4,Zorgbreed beleid,0,757374,697717,779740
+XVI,"Volksgezondheid, Welzijn en Sport",5,Jeugd,0,1533547,1551126,209109
+XVI,"Volksgezondheid, Welzijn en Sport",6,Sport en bewegen,0,135000,132421,126606
+XVI,"Volksgezondheid, Welzijn en Sport",7,Oorlogsgetroffenen en herinnering Wereldoorlog II,0,331574,327802,309002
+XVI,"Volksgezondheid, Welzijn en Sport",8,Tegemoetkoming specifieke kosten,0,5272231,4466171,4068504
+XVI,"Volksgezondheid, Welzijn en Sport",9,Algemeen,0,27936,30748,28144
+XVI,"Volksgezondheid, Welzijn en Sport",10,Apparaatsuitgaven,0,225639,222775,230232
+XVI,"Volksgezondheid, Welzijn en Sport",11,Nominaal en onvoorzien,0,-26659,-36814,-46640
+XVI,"Volksgezondheid, Welzijn en Sport",41,Volksgezondheid,630570,0,0,0
+XVI,"Volksgezondheid, Welzijn en Sport",42,Gezondheidszorg,8163594,0,0,0
+XVI,"Volksgezondheid, Welzijn en Sport",43,Langdurige zorg,6391860,0,0,0
+XVI,"Volksgezondheid, Welzijn en Sport",44,Maatschappelijke ondersteuning,212152,0,0,0
+XVI,"Volksgezondheid, Welzijn en Sport",45,Jeugd,1488585,0,0,0
+XVI,"Volksgezondheid, Welzijn en Sport",46,Sport en bewegen,128976,0,0,0
+XVI,"Volksgezondheid, Welzijn en Sport",47,Oorlogsgetroffenen en Herinnering Wereldoorlog II,342776,0,0,0
+XVI,"Volksgezondheid, Welzijn en Sport",97,Algemeen,33122,0,0,0
+XVI,"Volksgezondheid, Welzijn en Sport",98,Apparaatsuitgaven,228503,0,0,0
+XVI,"Volksgezondheid, Welzijn en Sport",99,Nominaal en onvoorzien,-55162,0,0,0
+XVII,Buitenlandse Handel en Ontwikkelingssamenwerking,1,Duurzame handel en investeringen,0,0,463256,514497
+XVII,Buitenlandse Handel en Ontwikkelingssamenwerking,1,Een sterke internationale concurrentiepositie,0,89197,0,0
+XVII,Buitenlandse Handel en Ontwikkelingssamenwerking,2,"Duurzame ontwikkeling, voedselzekerheid en water",0,0,581953,564053
+XVII,Buitenlandse Handel en Ontwikkelingssamenwerking,3,Sociale vooruitgang,0,0,985987,943934
+XVII,Buitenlandse Handel en Ontwikkelingssamenwerking,4,Vrede en veiligheid voor ontwikkeling,0,0,685469,394571
+XVII,Buitenlandse Handel en Ontwikkelingssamenwerking,5,Versterkte kaders voor ontwikkeling,0,0,79011,58110
+XVIII,Wonen en Rijksdienst,1,Woningmarkt,0,2880443,3031676,3335413
+XVIII,Wonen en Rijksdienst,2,Woonomgeving en bouw,0,32639,176384,101623
+XVIII,Wonen en Rijksdienst,3,Kwaliteit Rijksdienst,0,29380,17896,18333
+XVIII,Wonen en Rijksdienst,4,Uitvoering Rijkshuisvesting,0,59207,0,0
+XVIII,Wonen en Rijksdienst,5,Beheer materiële activa,0,84280,0,0
+XVIII,Wonen en Rijksdienst,6,Uitvoering rijksvastgoedbeleid,0,0,144826,147690
+XVIII,Wonen en Rijksdienst,10,Nominaal en onderverdeeld,0,0,0,0
+A,Infrastructuurfonds,11,Hoofdwatersystemen,617781,0,0,0
+A,Infrastructuurfonds,12,Hoofdwegennet,2457595,2728863,2800084,2293979
+A,Infrastructuurfonds,13,Spoorwegen,2445684,2197753,2397939,2387881
+A,Infrastructuurfonds,14,"Regionaal, lokale infrastructuur",329348,135983,241969,181447
+A,Infrastructuurfonds,15,Hoofdvaarwegennet,843656,844120,895163,883428
+A,Infrastructuurfonds,16,Megaprojecten niet-Verkeer en Vervoer,861154,0,0,0
+A,Infrastructuurfonds,17,Megaprojecten Verkeer en Vervoer,10000,54157,24368,143740
+A,Infrastructuurfonds,18,Overige uitgaven en ontvangsten,421460,273614,235032,272602
+A,Infrastructuurfonds,19,Bijdragen andere begrotingen Rijk,0,0,0,0
+B,Gemeentefonds,1,gemeentefonds,18334127,17963120,18381232,27272721
+C,Provinciefonds,1,provinciefonds,1116489,1138214,1171987,952181
+F,Diergezondheidsfonds,1,Bewaking en bestrijding van dierziekten en voorkomen en verminderen van welzijnsproblemen,9700,9700,10900,21860
+H,BES-fonds,1,BES-fonds,24903,32093,32709,31938
+J,Deltafonds,1,Investeren in waterveiligheid,0,536712,827890,903737
+J,Deltafonds,2,Investeren in zoetwatervoorziening,0,32117,3863,6249
+J,Deltafonds,3,"Beheer, onderhoud en vervanging",0,156150,176257,190021
+J,Deltafonds,4,Experimenteren cf. art. III Deltawet,0,0,0,11463
+J,Deltafonds,5,Netwerkgebonden kosten en overige uitgaven,0,247581,222828,216347
+J,Deltafonds,6,Bijdragen andere begrotingen Rijk,0,0,0,0
+J,Deltafonds,7,Investeren in waterkwaliteit,0,0,0,46770

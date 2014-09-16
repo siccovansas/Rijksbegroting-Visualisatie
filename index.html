@@ -59,6 +59,7 @@
           <li class='year'>2012</li>
           <li class='year'>2013</li>
           <li class='year'>2014</li>
+          <li class='year'>2015</li>
         </ul>
       </div>
       <div class='clear'></div>
@@ -101,8 +102,8 @@
           Ik heb zijn <a href="https://github.com/Solomon/us_budget">code</a> gebruikt en aangepast voor de Nederlandse data en deze ook weer <a href="https://github.com/siccovansas/us_budget">op GitHub beschikbaar</a> gemaakt (hier kun je ook de <a href="https://github.com/siccovansas/Rijksbegroting-Scraper/blob/master/rijksbegroting/crawled_data/nl_rijksbegroting_uitgaven.csv">ruwe data</a> vinden).
           <br />
           <br />
-          The rijksbegroting data komt van <a href="http://rijksbegroting.nl/">rijksbegroting.nl</a>. De overheid biedt daar de begrotingen van 2013 en een deel van 2014 als <a href="http://opendata.rijksbegroting.nl/">Open Data</a> aan.
-          Dat is een enorm goede zaak, maar jammer genoeg is de geleverde data voor een deel niet correct en daardoor onbruikbaar. Zo mist de Open Data bron meer dan €100 miljard aan inkomsten. De grootste fout is te vinden in het 'Belastingen' bedrag. <a href="http://www.rijksbegroting.nl/2013/voorbereiding/begroting,kst174013.html">Op de website</a> staat dat er in 2013 €118.200.909.000 werd begroot terwijl de Open Data-bron slechts het bedrag €852.125.000 vermeldt. Verder zijn er ook geen begrotingen van voor 2013 beschikbaar gemaakt als Open Data en is de data van 2014 niet up-to-date (de 1e suppletore ontbreekt, terwijl het al wel <a href="http://www.rijksbegroting.nl/2014/uitvoering/1e_suppletore">op de website staat</a>). Het zou de overheid sieren om deze gegevens ook als Open Data te ontsluiten zodat websites als deze en andere initiatieven er mee aan de slag kunnen!
+          The rijksbegroting data komt van <a href="http://rijksbegroting.nl/">rijksbegroting.nl</a>. De overheid biedt daar de begrotingen vanaf 2013 als <a href="http://opendata.rijksbegroting.nl/">Open Data</a> aan.
+          Dat is een enorm goede zaak, maar jammer genoeg is de geleverde data voor een deel niet correct en daardoor onbruikbaar. Zo mist de Open Data bron meer dan €100 miljard aan inkomsten. De grootste fout is te vinden in het 'Belastingen' bedrag. <a href="http://www.rijksbegroting.nl/2013/voorbereiding/begroting,kst174013.html">Op de website</a> staat dat er in 2013 €118.200.909.000 werd begroot terwijl de Open Data-bron slechts het bedrag €852.125.000 vermeldt. Verder zijn er ook geen begrotingen van de jaren voor 2013 beschikbaar gemaakt als Open Data. Het zou de overheid sieren om deze gegevens ook als Open Data te ontsluiten zodat websites als deze en andere initiatieven er mee aan de slag kunnen!
           <br />
           <br />
           Door deze tekortkomingen van de Open Data heb ik uiteindelijk de bedragen direct van de rijksbegroting.nl website moeten scrapen. Deze getallen lijken wel aardig te kloppen. De <a href="https://github.com/siccovansas/Rijksbegroting-Scraper">code voor de scraper</a> staat ook op GitHub.
@@ -115,7 +116,7 @@
        <div class='sources hidden'>
         <h2>Disclaimer</h2>
         <p>
-          De structuur van de <a href="http://www.rijksbegroting.nl/algemeen/overzichten,Verantwoord-begroten.html">begroting is na 2012 veranderd</a>. Daardoor zijn de namen van sommige departementen anders en dat is terug te zien in de visualisatie (klik bijvoorbeeld op 'Nationale Schuld' in 2012 of 'Financiën en Nationale Schuld' in 2013 of 2014). Het kan daardoor lijken dat een onderdeel verdwenen is, maar het geld valt dan simpelweg onder een andere noemer. Ook scheiden de departementen hun geld nu in programmageld (het ‘beleidsgeld’) en apparaatsgeld (geld aan personeel en materieel), waardoor een directe vergelijking tussen de bedragen van 2012 en de jaren daarna niet helemaal opgaat. Houd daar rekening mee! Verder kunnen sommige bedragen een beetje afwijken vanwege het afronden.
+          De structuur van de <a href="http://www.rijksbegroting.nl/algemeen/overzichten,Verantwoord-begroten.html">begroting is na 2012 veranderd</a>. Daardoor zijn de namen van sommige departementen anders en dat is terug te zien in de visualisatie (klik bijvoorbeeld op 'Nationale Schuld' in 2012 of 'Financiën en Nationale Schuld' in 2013, 2014 en 2015). Het kan daardoor lijken dat een onderdeel verdwenen is, maar het geld valt dan simpelweg onder een andere noemer. Ook scheiden de departementen hun geld nu in programmageld (het ‘beleidsgeld’) en apparaatsgeld (geld aan personeel en materieel), waardoor een directe vergelijking tussen de bedragen van 2012 en de jaren daarna niet helemaal opgaat. Houd daar rekening mee! Verder kunnen sommige bedragen een beetje afwijken vanwege het afronden.
         </p>
       </div>
       <div class='footer span12'>
