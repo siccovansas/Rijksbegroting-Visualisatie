@@ -45,10 +45,10 @@ $(document).ready(function(){
     adjustPerCapita: function(lineItems){
       var perCapita= [];
       var perCapitaDivisor = {
-        '2012': '16711',
+        '2012': '16730',
         '2013': '16780',
         '2014': '16829',
-        '2015': '16878',
+        '2015': '16901',
       }
       var years = _.range(2012, 2016);
       _.each(lineItems, function(i){
